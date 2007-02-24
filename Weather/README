@@ -1,0 +1,95 @@
+The packages in this directory are taken from Thomas Schnuecker's
+
+Weather-Com version 0.01
+========================
+
+THIS ARE THE PARTS OF HIS README THAT ARE RELEVANT TO WeatherTime. YOU CAN
+GET FULL/EXTENDED/UPDATED VERSIONS FROM CPAN Weather::Com.
+
+
+Introduction:
+--------------
+Weather-Com is meant to be a module suite enabling the perl programmer
+to access weather information as provided by weather.com's XOAP
+interface.
+
+I've tried to use Weather::Underground for some time but soon I found
+out that 'www.wunderground.com' does not provide much information about
+locations outside the US. I am german, hence, I had to look for a
+site providing international weather information - at least for the
+cities I usually work or live at.
+
+After surfing around for some time a friend of mine mentioned a
+PHP package (or whatever they call what we call 'module' or 'package')
+that accesses weather.com. I visited the weather.com site and found 
+an SDK providing detailed information on their mixture of an 
+HTTP-GET/XMLResponse API (http://www.weather.com/services/xmloap.html).
+ 
+They provide lots of information - not only the current conditions 
+like Weather::Underground does, but also up to 10 days of forecast 
+containing most information one could need, e.g. the time of sunrise 
+and sunset, the longitude and latitude of the location, data precompiled 
+either in the US system or in the metric system, etc. 
+
+To use this module you have to register first at weather.com
+(http://www.weather.com/services/xmloap.html), but's for free.
+You'll be send a mail containing your 'partner id', a license key
+and a link where to download the SDK which includes the 
+application developement guide, logos from weather.com and weather icons 
+in three different sizes (as .png) to be able to show not only the facts 
+and figures of the weather data you read.
+
+Components of this module:
+--------------------------
+This module consists of several parts:
+
+1. Weather::Com - the low level API
+2. Weather::Cached - implements the caching rules from weather.com
+
+[...]
+
+... other high level wrappers that provide all information returned
+    by Weather::Com will follow soon 
+
+Usually you should always use one of the high level wrappers as parsing
+the hash structure returned by Weather::Com and Weather::Cached is not
+self-explanatory.
+
+If you plan to use the low level interface directly, please use 
+Weather::Cached instead of Weather::Com to be sure to have the
+right caching rules implemented. You should only use Weather::Com
+directly, if you plan to implement other caching mechanisms, e.g.
+a database driven one instead of the file- and 'Storable-' based
+one that is used in Weather::Cached.
+
+If you want to implement another caching package around Weather::Com
+please contact the author of this module and tell him... There's no
+need to to the same work twice. Same applies for other packages to
+be build around te above ones.
+
+[...]
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+  - LWP::UserAgent
+  - Storable
+  - Time::Local
+  - XML::Simple
+  - URI::Escape
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2004 by Thomas Schnuecker (thomas@schnuecker.de)
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+The data provided by weather.com and made accessible by this OO
+interface can be used for free under special terms. 
+
+Please register at http://www.weather.com/services/xmloap.html, download
+the SDK and have a look at the application programming guide for further
+information about legal issues.
+
