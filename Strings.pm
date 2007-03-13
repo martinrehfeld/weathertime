@@ -1,6 +1,5 @@
 package Plugins::WeatherTime::Strings;
 
-
 sub strings { return '
 PLUGIN_SCREENSAVER_WEATHERTIME
 	DE	Wetter/Zeit Bildschirmschoner
