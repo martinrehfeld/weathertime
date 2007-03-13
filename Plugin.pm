@@ -546,7 +546,7 @@ sub retrieveWeather {
 		$numdays{$client}=1;
 		clearCanvas($client);
 		drawIcon($client,29,$ymax{$client}-1,$TWClogo);
-		$forecastGX{$client}[0] = $hashDisp{$client} # was: getFramebuf
+		$forecastGX{$client}[0] = $hashDisp{$client}; # was: getFramebuf
 		$currentTemperature{$client} = "";
 		$highTemp{$client}[0] = "";
 		$lowTemp{$client}[0] = "";
@@ -713,7 +713,7 @@ sub retrieveWeather {
 		}
 
 		drawText($client, $gxline1, $gxline2, $gxline3);
-		$forecastGX{$client}[$day] = $hashDisp{$client} # was: getFramebuf
+		$forecastGX{$client}[$day] = $hashDisp{$client}; # was: getFramebuf
 		$day++;
 	}
 
