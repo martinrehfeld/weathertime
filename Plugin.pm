@@ -140,8 +140,8 @@ package Plugins::WeatherTime::Plugin;
 
 use Slim::Utils::Misc;
 use Plugins::WeatherTime::Strings;
-#use Plugins::WeatherTime::Font;
-#use Plugins::WeatherTime::Icons;
+use Plugins::WeatherTime::Font;
+use Plugins::WeatherTime::Icons;
 use Plugins::WeatherTime::Weather::Cached;
 
 use vars qw($VERSION);

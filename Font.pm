@@ -14,7 +14,7 @@ package Plugins::WeatherTime::Font;
 # Map ASCII characters to custom @Charset elements
 #
 sub codepage {
-	return     ( ' ' =>  0, '1' =>  1, '2' =>  2, '3' =>  3, '4' =>  4,
+	my %page = ( ' ' =>  0, '1' =>  1, '2' =>  2, '3' =>  3, '4' =>  4,
                  '5' =>  5, '6' =>  6, '7' =>  7, '8' =>  8, '9' =>  9,
                  '0' => 10, '-' => 11, 'g' => 12, '.' => 13, '%' => 14,
                  'A' => 15, 'B' => 16, 'C' => 17, 'D' => 18, 'E' => 19,
@@ -23,13 +23,14 @@ sub codepage {
                  'P' => 30, 'Q' => 31, 'R' => 32, 'S' => 33, 'T' => 34,
                  'U' => 35, 'V' => 36, 'W' => 37, 'X' => 38, 'Y' => 39,
                  'Z' => 40, '/' => 41 );
+	return $page;
 }
 
 #
 # Custom 7x5 mono charset for 3-line forecast display on Squeezebox2
 #
 sub font {
-	return ('
+	my @charset = ('
 
 
 
@@ -367,6 +368,7 @@ sub font {
 *
 
 ');
+	return $charset;
 }
 
 1;
