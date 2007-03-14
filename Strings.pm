@@ -1045,5 +1045,6 @@ PLUGIN_WEATHERTIME_SUNNY_WIND
 	NL	zonnig/winderig
 ';}
 
-
 1;
+
+__END__

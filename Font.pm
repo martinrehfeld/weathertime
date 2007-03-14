@@ -29,7 +29,7 @@ sub codepage {
 # Custom 7x5 mono charset for 3-line forecast display on Squeezebox2
 #
 sub font {
-	return '
+	return ('
 
 
 
@@ -369,5 +369,6 @@ sub font {
 ');
 }
 
-
 1;
+
+__END__
