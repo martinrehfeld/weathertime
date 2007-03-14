@@ -140,8 +140,10 @@ package Plugins::WeatherTime::Plugin;
 
 use Slim::Utils::Misc;
 use Plugins::WeatherTime::Strings;
-
+use Plugins::WeatherTime::Font;
+use Plugins::WeatherTime::Icons;
 use Plugins::WeatherTime::Weather::Cached;
+
 use vars qw($VERSION);
 $VERSION = substr(q$Revision: 1.81 $,10);
 
@@ -218,73 +220,130 @@ sub enabled {
 	return ($::VERSION ge '6.5');
 }
 
-sub setupGroup {
-        my %setupGroup = (
-                PrefOrder => ['plugin_Weathertime_units','plugin_Weathertime_city','plugin_Weathertime_citycode','plugin_Weathertime_interval','plugin_Weathertime_partner','plugin_Weathertime_license','plugin_Weathertime_dateformat']
-                ,GroupHead => string('SETUP_GROUP_PLUGIN_WEATHERTIME')
-                ,GroupDesc => string('SETUP_GROUP_PLUGIN_WEATHERTIME_DESC')
-                ,GroupLine => 1
-                ,GroupSub => 1
-                ,Suppress_PrefHead => 1
-                ,Suppress_PrefDesc => 1
-                ,Suppress_PrefSub => 1
-                ,Suppress_PrefLine => 1
-                ,PrefsInTable => 1
-        );
-        my %setupPrefs = (
-                'plugin_Weathertime_units' => {
-                        'validate' => \&Slim::Utils::Validate::trueFalse
-                                ,'options' => {
-                                        '0' => string('SETUP_PLUGIN_WEATHERTIME_0')
-                                        ,'1' => string('SETUP_PLUGIN_WEATHERTIME_1')
-                                }
-                        ,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_UNITS')
-		}
-                ,'plugin_Weathertime_city' => {
-                        'validate' => \&Slim::Utils::Validate::hasText
-                        ,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_CITY')
-                        ,'PrefSize' => 'medium'
-                }
-                ,'plugin_Weathertime_citycode' => {
-                        'validate' => \&Slim::Utils::Validate::hasText
-                        ,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_CITYCODE')
-                        ,'PrefSize' => 'medium'
-                }
-                ,'plugin_Weathertime_interval' => {
-                        'validate' => \&Slim::Utils::Validate::number
-                        ,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_INTERVAL')
-                        ,'PrefSize' => 'medium'
-                }
-                ,'plugin_Weathertime_partner' => {
-                        'validate' => \&Slim::Utils::Validate::hasText
-                        ,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_PARTNER')
-                        ,'PrefSize' => 'medium'
-                }
-                ,'plugin_Weathertime_license' => {
-                        'validate' => \&Slim::Utils::Validate::hasText
-                        ,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_LICENSE')
-                        ,'PrefSize' => 'medium'
-                }
-                ,'plugin_Weathertime_dateformat' => {
-                        'validate' => \&Slim::Utils::Validate::acceptAll
-                                ,'options' => {
-					'std' => string('SETUP_PLUGIN_WEATHERTIME_STDDATE'),
-					'none' => string('SETUP_PLUGIN_WEATHERTIME_NODATE'),
-					'%m/%d' => 'MM/DD',
-					'%m-%d' => 'MM-DD',
-					'%m.%d.' => 'MM.DD.',
-					'%d/%m' => 'DD/MM',
-					'%d-%m' => 'DD-MM',
-					'%d.%m.' => 'DD.MM.',
-					'%b %d' => 'MMM DD',
-					'%d %b' => 'DD MMM'
-                                }
-                        ,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_DATEFORMAT')
-				}
-        );
+sub setMode {
+	my $client = shift;
+	$client->lines(\&lines);
 
-        checkDefaults();
-        return (\%setupGroup,\%setupPrefs);
+	# setting this param will call client->update() frequently
+	$client->param('modeUpdateInterval', 1); # seconds
+}
+
+our %functions = (
+	'up' => sub  {
+		my $client = shift;
+		my $button = shift;
+		$client->bumpUp() if ($button !~ /repeat/);
+	},
+	'down' => sub  {
+		my $client = shift;
+		my $button = shift;
+		$client->bumpDown() if ($button !~ /repeat/);;
+	},
+	'left' => sub  {
+		my ($client ,$funct ,$functarg) = @_;
+
+		Slim::Buttons::Common::popModeRight($client);
+		$client->update();
+
+		# pass along ir code to new mode if requested
+		if (defined $functarg && $functarg eq 'passback') {
+			Slim::Hardware::IR::resendButton($client);
+		}
+	},
+	'right' => sub  {
+		my $client = shift;
+		$client->bumpRight();
+	},
+	'play' => sub  {
+		my $client = shift;
+		Slim::Buttons::Common::pushMode($client, 'SCREENSAVER.weathertime');
+	},
+	'stop' => sub {
+		my $client = shift;
+		Slim::Buttons::Common::pushMode($client, 'SCREENSAVER.weathertime');
+	}
+);
+
+sub lines {
+	my $client = shift;
+	my ($line1, $line2);
+	$line1 = $client->string('PLUGIN_SCREENSAVER_WEATHERTIME');
+	$line2 = $client->string('PLUGIN_SCREENSAVER_WEATHERTIME_START');
+
+	return ($line1, $line2);
+}
+
+sub getFunctions {
+	return \%functions;
+}
+
+sub setupGroup {
+	my %setupGroup = (
+		PrefOrder => ['plugin_Weathertime_units','plugin_Weathertime_city','plugin_Weathertime_citycode','plugin_Weathertime_interval','plugin_Weathertime_partner','plugin_Weathertime_license','plugin_Weathertime_dateformat']
+		,GroupHead => string('SETUP_GROUP_PLUGIN_WEATHERTIME')
+		,GroupDesc => string('SETUP_GROUP_PLUGIN_WEATHERTIME_DESC')
+		,GroupLine => 1
+		,GroupSub => 1
+		,Suppress_PrefHead => 1
+		,Suppress_PrefDesc => 1
+		,Suppress_PrefSub => 1
+		,Suppress_PrefLine => 1
+		,PrefsInTable => 1
+	);
+	my %setupPrefs = (
+		'plugin_Weathertime_units' => {
+			'validate' => \&Slim::Utils::Validate::trueFalse
+			,'options' => {
+				'0' => string('SETUP_PLUGIN_WEATHERTIME_0')
+				,'1' => string('SETUP_PLUGIN_WEATHERTIME_1')
+			}
+			,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_UNITS')
+		}
+		,'plugin_Weathertime_city' => {
+			'validate' => \&Slim::Utils::Validate::hasText
+			,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_CITY')
+			,'PrefSize' => 'medium'
+		}
+		,'plugin_Weathertime_citycode' => {
+			'validate' => \&Slim::Utils::Validate::hasText
+			,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_CITYCODE')
+			,'PrefSize' => 'medium'
+		}
+		,'plugin_Weathertime_interval' => {
+			'validate' => \&Slim::Utils::Validate::number
+			,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_INTERVAL')
+			,'PrefSize' => 'medium'
+		}
+		,'plugin_Weathertime_partner' => {
+			'validate' => \&Slim::Utils::Validate::hasText
+			,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_PARTNER')
+			,'PrefSize' => 'medium'
+		}
+		,'plugin_Weathertime_license' => {
+			'validate' => \&Slim::Utils::Validate::hasText
+			,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_LICENSE')
+			,'PrefSize' => 'medium'
+		}
+		,'plugin_Weathertime_dateformat' => {
+			'validate' => \&Slim::Utils::Validate::acceptAll
+			,'options' => {
+				'std' => string('SETUP_PLUGIN_WEATHERTIME_STDDATE'),
+				'none' => string('SETUP_PLUGIN_WEATHERTIME_NODATE'),
+				'%m/%d' => 'MM/DD',
+				'%m-%d' => 'MM-DD',
+				'%m.%d.' => 'MM.DD.',
+				'%d/%m' => 'DD/MM',
+				'%d-%m' => 'DD-MM',
+				'%d.%m.' => 'DD.MM.',
+				'%b %d' => 'MMM DD',
+				'%d %b' => 'DD MMM'
+			}
+			,'PrefChoose' => string('SETUP_PLUGIN_WEATHERTIME_DATEFORMAT')
+		}
+	);
+
+	checkDefaults();
+	return (\%setupGroup,\%setupPrefs);
 }
 
 sub checkDefaults {
@@ -396,11 +455,11 @@ sub setScreensaverWeatherTimeMode() {
 	clearCanvas($client);
 	drawIcon($client,29,$ymax{$client}-1,$TWClogo);
 	$forecastGX{$client}[$scrollIndex{$client}] = getFramebuf($client,$gxwidth);
-        $forecast{$client}=();
-        $highTemp{$client}[$scrollIndex{$client}]="";
-        $lowTemp{$client}[$scrollIndex{$client}]="";
+	$forecast{$client}=();
+	$highTemp{$client}[$scrollIndex{$client}]="";
+	$lowTemp{$client}[$scrollIndex{$client}]="";
 	$currentTemperature{$client} = "";
-        $numdays{$client}=0;
+	$numdays{$client}=0;
 	# wait 4 seconds before getting weather data to make sure the lines-
 	# function has completed before and the display is updated -> Start-Logo
 	$Countdown{$client} = 4 / $refreshTime;
@@ -499,12 +558,10 @@ sub screensaverWeatherTimelines {
 	Slim::Buttons::Common::syncPeriodicUpdates($client, int($nextUpdate)) if (($nextUpdate - int($nextUpdate)) > 0.01);
 
 	$overlay1 = undef;
-	if ($alarmOn)
-	{
+	if ($alarmOn) {
 		$overlay2 = $client->symbols('bell');
 	}
-	else
-	{
+	else {
 		$overlay2 = undef;
 	}
 
@@ -528,17 +585,17 @@ sub retrieveWeather {
 	chomp $loc;
 	my $proxy = Slim::Utils::Prefs::get('webproxy') ? 'http://'.Slim::Utils::Prefs::get('webproxy') : undef;
 	my %comargs = (
-                        'partner_id' => &Partner,
-                        'license'    => &License,
-                        'debug'      => 0,
-                        'cache'      => Slim::Utils::Prefs::get('cachedir'),
-                        'proxy'      => $proxy,
-                        'current'    => 1,
-                        'forecast'   => 7,
-                        'links'      => 0,
-                        'units'      => metric() ? 'm' : 's',
-                        'timeout'    => $timeout
-                        );
+		'partner_id' => &Partner,
+		'license'    => &License,
+		'debug'      => 0,
+		'cache'      => Slim::Utils::Prefs::get('cachedir'),
+		'proxy'      => $proxy,
+		'current'    => 1,
+		'forecast'   => 7,
+		'links'      => 0,
+		'units'      => metric() ? 'm' : 's',
+		'timeout'    => $timeout
+	);
 	my $wc = Weather::Cached->new(%comargs);
 	my $weather;
 
@@ -579,35 +636,35 @@ sub retrieveWeather {
 	if (valid($weather->{cc}->{tmp})) {
 		$currentTemperature{$client} = '='.$weather->{cc}->{tmp}.$weather->{head}->{ut};
 		$gxline1 = sprintf('%-6.5s% 2dg%s',uc(string('PLUGIN_WEATHERTIME_CURRENTTEMP')),
-                                                   $weather->{cc}->{tmp},
-                                                   $weather->{head}->{ut});
+		                                   $weather->{cc}->{tmp},
+		                                   $weather->{head}->{ut});
 	}
 	else {
 		$currentTemperature{$client} = "";
 	}
-        my $day = 0;
-        foreach (@{$weather->{'dayf'}->{'day'}}) {
+	my $day = 0;
+	foreach (@{$weather->{'dayf'}->{'day'}}) {
 		clearCanvas($client);
 
 		# format high and/or low temperature strings
 		if (valid($_->{'hi'}) && valid($_->{'low'})) {
 			$gxline2 = sprintf('% 2d - % 2dg%s',$_->{'low'},
 			                                    $_->{'hi'},
-			                             $weather->{head}->{ut});
+			                                    $weather->{head}->{ut});
 			$highTemp{$client}[$day] = '<'.$_->{'hi'}.$weather->{head}->{ut};
 			$lowTemp{$client}[$day] = '>'.$_->{'low'}.$weather->{head}->{ut};
 		}
 		elsif (valid($_->{'hi'})) {
 			$gxline2 = sprintf('%-6.5s% 2dg%s',uc(string('PLUGIN_WEATHERTIME_HIGH')),
 			                                   $_->{'hi'},
-			                             $weather->{head}->{ut});
+			                                   $weather->{head}->{ut});
 			$highTemp{$client}[$day] = '<'.$_->{'hi'}.$weather->{head}->{ut};
 			$lowTemp{$client}[$day] = "";
 		}
 		elsif (valid($_->{'low'})) {
 			$gxline2 = sprintf('%-6.5s% 2dg%s',uc(string('PLUGIN_WEATHERTIME_LOW')),
 			                                   $_->{'low'},
-			                             $weather->{head}->{ut});
+			                                   $weather->{head}->{ut});
 			$lowTemp{$client}[$day] = '>'.$_->{'low'}.$weather->{head}->{ut};
 			$highTemp{$client}[$day] = "";
 		}
@@ -633,7 +690,7 @@ sub retrieveWeather {
 			# get and draw icon
 			if (valid($_->{part}->[0]->{icon})) {
 				drawIcon($client,0,$ymax{$client}-1,
-					 $Icons[$Iconmap{$_->{part}->[0]->{icon}}]);
+				         $Icons[$Iconmap{$_->{part}->[0]->{icon}}]);
 			}
 			else {
 				# icon no 9 is the N/A icon
@@ -641,7 +698,7 @@ sub retrieveWeather {
 			}
 		}
 		elsif (valid($_->{part}->[1]->{t})) {
-		# otherwise use data for second half of the day
+			# otherwise use data for second half of the day
 			# use upper case and transliterate for string lookup
 			$weatherConditions = uc $_->{part}->[1]->{t};
 			$weatherConditions =~ tr/ \//__/;
@@ -654,7 +711,7 @@ sub retrieveWeather {
 			# get and draw icon
 			if (valid($_->{part}->[1]->{icon})) {
 				drawIcon($client,0,$ymax{$client}-1,
-					 $Icons[$Iconmap{$_->{part}->[1]->{icon}}]);
+				         $Icons[$Iconmap{$_->{part}->[1]->{icon}}]);
 			}
 			else {
 				# icon no 9 is the N/A icon
@@ -669,7 +726,7 @@ sub retrieveWeather {
 			# today's forcast
 			if (valid($_->{part}->[0]->{t})) {
 				$forecast{$client}[$day] = string('PLUGIN_WEATHERTIME_TODAY').' '.
-				                  $weatherConditions;
+				                           $weatherConditions;
 				# show todays forecast per default
 				$scrollDefault{$client} = 0;
 				$scrollIndex{$client} = $scrollDefault{$client};
@@ -677,7 +734,7 @@ sub retrieveWeather {
 			# tonight's forcast
 			else {
 				$forecast{$client}[$day] = string('PLUGIN_WEATHERTIME_TONIGHT').' '.
-				                  $weatherConditions;
+				                           $weatherConditions;
 				# scroll to  tomorrow's forecast per default
 				# instead of tonight's forecast
 				my ($d1,$d2,$hour,$d3,$d4,$d5,$d6,$d7) = localtime(time());
@@ -688,14 +745,14 @@ sub retrieveWeather {
 		elsif ($day == 1) {
 			# tomorrows forecast
 			$forecast{$client}[$day] = string('PLUGIN_WEATHERTIME_TOMORROW').' '.
-			                  $weatherConditions;
+			                           $weatherConditions;
 			# keep NOW temp on display
 			# $gxline1 = "";
 		}
 		else {
 			# forecast for after tomorrow
 			$forecast{$client}[$day] = string('PLUGIN_WEATHERTIME_'.$_->{'t'}).' '.
-			                  $weatherConditions;
+			                           $weatherConditions;
 			# NOW temp makes not much sense here, does it?
 			$gxline1 = "";
 		}
@@ -706,11 +763,11 @@ sub retrieveWeather {
 		# get precipitation chance
 		if (valid($_->{part}->[0]->{ppcp})) {
 			$gxline3 = sprintf('%-7.6s%d%%',uc(string('PLUGIN_WEATHERTIME_PRECIP')),
-			                              $_->{part}->[0]->{ppcp});
+			                                $_->{part}->[0]->{ppcp});
 		}
 		elsif (valid($_->{part}->[1]->{ppcp})) {
 			$gxline3 = sprintf('%-7.6s%d%%',uc(string('PLUGIN_WEATHERTIME_PRECIP')),
-			                              $_->{part}->[1]->{ppcp});
+			                                $_->{part}->[1]->{ppcp});
 		}
 		else {
 			$gxline3 = "";

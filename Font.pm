@@ -1,3 +1,13 @@
+# WeatherTime/Font.pm
+# $Id$
+#
+#	Author: Martin Rehfeld <martin.rehfeld(at)glnetworks(dot)de>
+#
+#	Copyright (c) 2005-2007
+#	This file is part of the WeatherTime software. The same license applies.
+#	See main file Plugin.pm for details
+#
+
 package Plugins::WeatherTime::Font;
 
 #
