@@ -10,7 +10,8 @@
 
 package Plugins::WeatherTime::Strings;
 
-sub strings { return '
+sub strings {
+	return '
 PLUGIN_SCREENSAVER_WEATHERTIME
 	DE	Wetter/Zeit Bildschirmschoner
 	EN	Weather, Date and Time

@@ -180,14 +180,6 @@ my $refreshTime = 1.0;  # should usually be 1.0 seconds
                         # ... controls how often the scroll timeout and 
                         #     the necessity of weather updates are checked
 
-#my %Codepage = Plugins::WeatherTime::Font::codepage();
-#my @Charset = Plugins::WeatherTime::Font::charset();
-
-#my %Iconmap = Plugins::WeatherTime::Icons::iconmap(); 
-#my @Icons = Plugins::WeatherTime::Icons::icons();
-#my $TWClogo = Plugins::WeatherTime::Icons::logo(); 
-
-
 sub getDisplayName {
 	return 'PLUGIN_SCREENSAVER_WEATHERTIME';
 }
