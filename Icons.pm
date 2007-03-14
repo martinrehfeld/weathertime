@@ -528,7 +528,7 @@ sub icons {
     *****                *
                          *
 ');
-	return $graphics;
+	return \@graphics;
 }
 
 sub logo {
@@ -585,9 +585,7 @@ sub iconmap {
                 '41' => 3,  '42' => 3,  '43' => 3,  '44' => 5,  '45' => 1, 
                 '46' => 3,  '47' => 2,  '48' => 7,  '0'  => 2,  'na' => 9,
                 'NA' => 9,  'N/A' => 9 );
-	return $map;
+	return \%map;
 }
 
 1;
-
-__END__

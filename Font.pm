@@ -23,7 +23,7 @@ sub codepage {
                  'P' => 30, 'Q' => 31, 'R' => 32, 'S' => 33, 'T' => 34,
                  'U' => 35, 'V' => 36, 'W' => 37, 'X' => 38, 'Y' => 39,
                  'Z' => 40, '/' => 41 );
-	return $page;
+	return \%page;
 }
 
 #
@@ -368,9 +368,7 @@ sub font {
 *
 
 ');
-	return $charset;
+	return \@charset;
 }
 
 1;
-
-__END__
