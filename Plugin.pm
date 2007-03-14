@@ -145,7 +145,7 @@ use Plugins::WeatherTime::Icons;
 use Plugins::WeatherTime::Weather::Cached;
 
 use vars qw($VERSION);
-$VERSION = substr(q$Revision: 1.81 $,10);
+$VERSION = substr(q$Revision: 1.9 $,10);
 
 use Slim::Utils::Strings qw (string);
 use Socket;
@@ -186,6 +186,7 @@ my $refreshTime = 1.0;  # should usually be 1.0 seconds
 #my %Iconmap = Plugins::WeatherTime::Icons::iconmap(); 
 #my @Icons = Plugins::WeatherTime::Icons::icons();
 #my $TWClogo = Plugins::WeatherTime::Icons::logo(); 
+
 
 sub getDisplayName {
 	return 'PLUGIN_SCREENSAVER_WEATHERTIME';
