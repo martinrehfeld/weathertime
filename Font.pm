@@ -9,6 +9,7 @@
 #
 
 package Plugins::WeatherTime::Font;
+use strict;
 
 #
 # Map ASCII characters to custom @Charset elements

@@ -9,6 +9,7 @@
 #
 
 package Plugins::WeatherTime::Icons;
+use strict;
 
 #
 # Custom weather condition icons (40x32 pixel)

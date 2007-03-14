@@ -9,6 +9,7 @@
 #
 
 package Plugins::WeatherTime::Strings;
+use strict;
 
 sub strings { return '
 PLUGIN_SCREENSAVER_WEATHERTIME
