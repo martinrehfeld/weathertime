@@ -86,11 +86,11 @@
 #	                  NOT backwards compatible with previous releases
 #	                  added more translated strings
 #	                  replaced menu-based enable/disable with direct start
-#	2006/11/02 v1.8.1 fix for Slimserver 7.x series
+#	2007/14/03 v1.9   fix for Slimserver 7.x series
 #	                  added additional icons by Yannzola
 #	                  added Swedish translations contributed by Daniel
 #	                  Cervera <dc11ab(at)gmail.com>
-#                     implemented some cleanups by Michael Herger
+#	                  implemented some cleanups by Michael Herger
 #
 #	----------------------------------------------------------------------
 #	To do:
@@ -180,28 +180,12 @@ my $refreshTime = 1.0;  # should usually be 1.0 seconds
                         # ... controls how often the scroll timeout and 
                         #     the necessity of weather updates are checked
 
-my %Codepage = Plugins::WeatherTime::Font::codepage();
-my @Charset = Plugins::WeatherTime::Font::charset();
+#my %Codepage = Plugins::WeatherTime::Font::codepage();
+#my @Charset = Plugins::WeatherTime::Font::charset();
 
-#
-# map standard weather.com icons to custom icons
-# -> we use only 16 different icons but weather.com has 49
-# missing: #22: "smoke" (substituted with "fog")
-#
-my %Iconmap = ( '1'  => 2,  '2'  => 1,  '3'  => 2,  '4'  => 2,  '5'  => 3, 
-                '6'  => 1,  '7'  => 3,  '8'  => 3,  '9'  => 1,  '10' => 3, 
-                '11' => 1,  '12' => 1,  '13' => 3,  '14' => 3,  '15' => 3, 
-                '16' => 3,  '17' => 2,  '18' => 1,  '19' => 10, '20' => 11, 
-                '21' => 12, '22' => 11, '23' => 13, '24' => 13, '25' => 14, 
-                '26' => 0,  '27' => 0,  '28' => 6,  '29' => 5,  '30' => 5, 
-                '31' => 4,  '32' => 4,  '33' => 5,  '34' => 5,  '35' => 2, 
-                '36' => 15, '37' => 8,  '38' => 8,  '39' => 7,  '40' => 1, 
-                '41' => 3,  '42' => 3,  '43' => 3,  '44' => 5,  '45' => 1, 
-                '46' => 3,  '47' => 2,  '48' => 7,  '0'  => 2,  'na' => 9,
-                'NA' => 9,  'N/A' => 9 );
-
-my @Icons = Plugins::WeatherTime::Icons::icons();
-my $TWClogo = Plugins::WeatherTime::Icons::logo(); 
+#my %Iconmap = Plugins::WeatherTime::Icons::iconmap(); 
+#my @Icons = Plugins::WeatherTime::Icons::icons();
+#my $TWClogo = Plugins::WeatherTime::Icons::logo(); 
 
 sub getDisplayName {
 	return 'PLUGIN_SCREENSAVER_WEATHERTIME';
@@ -453,7 +437,7 @@ sub setScreensaverWeatherTimeMode() {
 	$scrollIndex{$client} = $scrollDefault{$client};
 	$scrollTimeout{$client} = 15 / $refreshTime;
 	clearCanvas($client);
-	drawIcon($client,29,$ymax{$client}-1,$TWClogo);
+	drawIcon($client,29,$ymax{$client}-1,Plugins::WeatherTime::Icons::logo());
 	$forecastGX{$client}[$scrollIndex{$client}] = getFramebuf($client,$gxwidth);
 	$forecast{$client}=();
 	$highTemp{$client}[$scrollIndex{$client}]="";
@@ -606,7 +590,7 @@ sub retrieveWeather {
 		# set display to show NO_FORECAST_AVAILABLE message
 		$numdays{$client}=1;
 		clearCanvas($client);
-		drawIcon($client,29,$ymax{$client}-1,$TWClogo);
+		drawIcon($client,29,$ymax{$client}-1,Plugins::WeatherTime::Icons::logo());
 		$forecastGX{$client}[0] = getFramebuf($client,$gxwidth);
 		$currentTemperature{$client} = "";
 		$highTemp{$client}[0] = "";
@@ -690,11 +674,11 @@ sub retrieveWeather {
 			# get and draw icon
 			if (valid($_->{part}->[0]->{icon})) {
 				drawIcon($client,0,$ymax{$client}-1,
-				         $Icons[$Iconmap{$_->{part}->[0]->{icon}}]);
+				         Plugins::WeatherTime::Icons::icons()[Plugins::WeatherTime::Icons::iconmap(){$_->{part}->[0]->{icon}}]);
 			}
 			else {
 				# icon no 9 is the N/A icon
-				drawIcon($client,0,$ymax{$client}-1,$Icons[9]);
+				drawIcon($client,0,$ymax{$client}-1,Plugins::WeatherTime::Icons::icons()[9]);
 			}
 		}
 		elsif (valid($_->{part}->[1]->{t})) {
@@ -711,16 +695,16 @@ sub retrieveWeather {
 			# get and draw icon
 			if (valid($_->{part}->[1]->{icon})) {
 				drawIcon($client,0,$ymax{$client}-1,
-				         $Icons[$Iconmap{$_->{part}->[1]->{icon}}]);
+				         Plugins::WeatherTime::Icons::icons()[Plugins::WeatherTime::Icons::iconmap(){$_->{part}->[1]->{icon}}]);
 			}
 			else {
 				# icon no 9 is the N/A icon
-				drawIcon($client,0,$ymax{$client}-1,$Icons[9]);
+				drawIcon($client,0,$ymax{$client}-1,Plugins::WeatherTime::Icons::icons()[9]);
 			}
 		}
 		else {
 			$weatherConditions = string('PLUGIN_WEATHERTIME_NO_FORECAST_AVAILABLE');
-			drawIcon($client,0,$ymax{$client}-1,$Icons[9]);
+			drawIcon($client,0,$ymax{$client}-1,Plugins::WeatherTime::Icons::icons()[9]);
 		}
 		if ($day == 0) {
 			# today's forcast
@@ -842,7 +826,7 @@ sub drawText {
 			my $firstline = 1;
 			my $xs = $xpos < 0 ? 0 : $xpos + $ci*6;
 			my $yi = $ypos > $ymax{$client} ? $ymax{$client} : $ypos;
-			for my $line (split('\n',$Charset[$Codepage{$c}])) {
+			for my $line (split('\n',Plugins::WeatherTime::Font::charset()[Plugins::WeatherTime::Font::codepage(){$c}])) {
 				# first line must be skipped (empty)
 				if ($firstline) {
 					$firstline = 0;
