@@ -137,11 +137,7 @@ use strict;
 
 package Plugins::WeatherTime::Plugin;
 
-#use Slim::Control::Command;
-#use Slim::Buttons::Common;
 use Slim::Utils::Misc;
-#use Slim::Utils::Validate;
-#use Slim::Display::Display;
 use Plugins::WeatherTime::Strings;
 use Plugins::WeatherTime::Weather::Cached;
 
