@@ -1071,7 +1071,6 @@ my @Icons = ('
                          *
 ');
 
-
 my $TWClogo = '
        ************************
        ************************
@@ -1124,62 +1123,62 @@ sub enabled {
 	return ($::VERSION ge '6.5');
 }
 
-#sub setMode {
-#	my $client = shift;
-#	$client->lines(\&lines);
-#
-#	# setting this param will call client->update() frequently
-#	$client->param('modeUpdateInterval', 1); # seconds
-#}
-#
-#our %functions = (
-#	'up' => sub  {
-#		my $client = shift;
-#		my $button = shift;
-#		$client->bumpUp() if ($button !~ /repeat/);
-#	},
-#	'down' => sub  {
-#		my $client = shift;
-#		my $button = shift;
-#		$client->bumpDown() if ($button !~ /repeat/);;
-#	},
-#	'left' => sub  {
-#		my ($client ,$funct ,$functarg) = @_;
-#
-#		Slim::Buttons::Common::popModeRight($client);
-#		$client->update();
-#
-#		# pass along ir code to new mode if requested
-#		if (defined $functarg && $functarg eq 'passback') {
-#			Slim::Hardware::IR::resendButton($client);
-#		}
-#	},
-#	'right' => sub  {
-#		my $client = shift;
-#		$client->bumpRight();
-#	},
-#	'play' => sub  {
-#		my $client = shift;
-#		Slim::Buttons::Common::pushMode($client, 'SCREENSAVER.weathertime');
-#	},
-#	'stop' => sub {
-#		my $client = shift;
-#		Slim::Buttons::Common::pushMode($client, 'SCREENSAVER.weathertime');
-#	}
-#);
-#
-#sub lines {
-#	my $client = shift;
-#	my ($line1, $line2);
-#	$line1 = $client->string('PLUGIN_SCREENSAVER_WEATHERTIME');
-#	$line2 = $client->string('PLUGIN_SCREENSAVER_WEATHERTIME_START');
-#
-#	return ($line1, $line2);
-#}
-#
-#sub getFunctions {
-#	return \%functions;
-#}
+sub setMode {
+	my $client = shift;
+	$client->lines(\&lines);
+
+	# setting this param will call client->update() frequently
+	$client->param('modeUpdateInterval', 1); # seconds
+}
+
+our %functions = (
+	'up' => sub  {
+		my $client = shift;
+		my $button = shift;
+		$client->bumpUp() if ($button !~ /repeat/);
+	},
+	'down' => sub  {
+		my $client = shift;
+		my $button = shift;
+		$client->bumpDown() if ($button !~ /repeat/);;
+	},
+	'left' => sub  {
+		my ($client ,$funct ,$functarg) = @_;
+
+		Slim::Buttons::Common::popModeRight($client);
+		$client->update();
+
+		# pass along ir code to new mode if requested
+		if (defined $functarg && $functarg eq 'passback') {
+			Slim::Hardware::IR::resendButton($client);
+		}
+	},
+	'right' => sub  {
+		my $client = shift;
+		$client->bumpRight();
+	},
+	'play' => sub  {
+		my $client = shift;
+		Slim::Buttons::Common::pushMode($client, 'SCREENSAVER.weathertime');
+	},
+	'stop' => sub {
+		my $client = shift;
+		Slim::Buttons::Common::pushMode($client, 'SCREENSAVER.weathertime');
+	}
+);
+
+sub lines {
+	my $client = shift;
+	my ($line1, $line2);
+	$line1 = $client->string('PLUGIN_SCREENSAVER_WEATHERTIME');
+	$line2 = $client->string('PLUGIN_SCREENSAVER_WEATHERTIME_START');
+
+	return ($line1, $line2);
+}
+
+sub getFunctions {
+	return \%functions;
+}
 
 sub setupGroup {
 	my %setupGroup = (
