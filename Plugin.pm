@@ -86,16 +86,16 @@
 #	                  NOT backwards compatible with previous releases
 #	                  added more translated strings
 #	                  replaced menu-based enable/disable with direct start
-#	2007/14/03 v1.9   fix for Slimserver 7.x series
+#	2007/03/14 v1.9   fix for Slimserver 7.x series
 #	                  added additional icons by Yannzola
 #	                  added Swedish translations contributed by Daniel
 #	                  Cervera <dc11ab(at)gmail.com>
 #	                  implemented some cleanups by Michael Herger
+#   2007/11/11 v2.0   compatibility with new SqueezeCenter
 #
 #	----------------------------------------------------------------------
 #	To do:
 #
-#	- Add missing icons for special weather conditions
 #	- Add more translations
 #	- Optional: Support SqueezeboxG's graphic features (lowres icons?)
 #	- Support the second display of the Transporter
@@ -145,7 +145,7 @@ use Plugins::WeatherTime::Icons;
 use Plugins::WeatherTime::Weather::Cached;
 
 use vars qw($VERSION);
-$VERSION = substr(q$Revision: 1.9 $,10);
+$VERSION = substr(q$Revision: 2.0 $,10);
 
 use Slim::Utils::Strings qw (string);
 use Socket;
@@ -529,7 +529,7 @@ sub screensaverWeatherTimelines {
 	}
 
 	my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
-	my $alarmOn = $client->prefGet("alarm", 0) || $client->prefGet("alarm", $wday);
+	my $alarmOn = preferences('server')->client($client)->get("alarm")->[0] || preferences('server')->client($client)->get("alarm")->[$wday];
 
 	my $nextUpdate = $client->periodicUpdateTime();
 	Slim::Buttons::Common::syncPeriodicUpdates($client, int($nextUpdate)) if (($nextUpdate - int($nextUpdate)) > 0.01);
