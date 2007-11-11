@@ -1455,7 +1455,7 @@ sub screensaverWeatherTimelines {
 	}
 
 	my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
-	my $alarmOn = preferences('server')->client($client)->get("alarm")->[0] || preferences('server')->client($client)->get("alarm")->[$wday];
+	my $alarmOn = $client->prefGet("alarm", 0) || $client->prefGet("alarm", $wday);
 
 	my $nextUpdate = $client->periodicUpdateTime();
 	Slim::Buttons::Common::syncPeriodicUpdates($client, int($nextUpdate)) if (($nextUpdate - int($nextUpdate)) > 0.01);
