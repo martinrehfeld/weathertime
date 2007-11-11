@@ -438,12 +438,6 @@ PLUGIN_WEATHERTIME_AM_RAIN_SNOW_SHOWERS
 	DE	Vorm. Regen/Schneeschauer
 	NL	ocht. regen/sneeuwbui
 
-PLUGIN_WEATHERTIME_LIGHT_RAIN_WIND
-	EN	Light Rain/Wind
-	FR	Pluie/Vents L�gers
-	DE	leichter Regen/Wind
-	NL	enige regen/winderig
-
 PLUGIN_WEATHERTIME_SHOWERS_WIND
 	EN	Showers/Wind
 	FR	Averses/Vent
