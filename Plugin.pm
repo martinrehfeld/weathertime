@@ -137,6 +137,7 @@ use strict;
 
 package Plugins::WeatherTime::Plugin;
 
+use POSIX qw(strftime);
 use Slim::Utils::Misc;
 use Plugins::WeatherTime::Strings;
 use Plugins::WeatherTime::Weather::Cached;
