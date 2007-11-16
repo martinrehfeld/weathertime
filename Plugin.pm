@@ -88,9 +88,8 @@
 #	                  replaced menu-based enable/disable with direct start
 #	2007/11/11 v1.9   fix for Slimserver 7.x series
 #	                  added additional icons by Yannzola
-#	                  added Swedish translations contributed by Daniel
-#	                  Cervera <dc11ab(at)gmail.com>
 #	                  implemented some cleanups by Michael Herger
+#   2007/11/16 v1.9.1 fix for use of POSIX::strftime
 #
 #	----------------------------------------------------------------------
 #	To do:
