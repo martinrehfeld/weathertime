@@ -96,6 +96,14 @@ SETUP_GROUP_PLUGIN_WEATHERTIME_DESC
 	SE	Väderprognos hämtas från <i>Weather Underground&reg;</i>. To localize your forecast you also need to find out a unambiguous wunderground.com citycode. It is advisable to use the 3-letter-code of your nearest airport, e.g. TXL for Berlin-Tegel, Germany.
 	DA	Vejrprognosen hentes fra <i>Weather Underground&reg;</i>. For lokal prognose skal du finde wunderground.com by koden, f.eks RKE for Roskilde, Danmark (Airport-Code).
 
+PLUGIN_SCREENSAVER_WEATHERTIME_DESC
+	EN	The weather data is retrieved from <i>Weather Underground&reg;</i>. To localize your forecast you also need to find out a unambiguous wunderground.com citycode. It is advisable to use the 3-letter-code of your nearest airport, e.g. TXL for Berlin-Tegel, Germany.
+	FR	L'information météo est extraite de <i>Weather Underground&reg;</i>. Pour localiser vos prévisions vous devez aussi déterminer le code de ville de wunderground.com, par exemple YUL pour Montréal, Canada (Airport-Code).
+	DE	Die Wetterdaten werden von <i>Weather Underground&reg;</i> bezogen. Der Citycode stammt ebenfalls von wunderground.com, zum Beispiel TXL für Berlin-Tegel (es empfiehlt sich, den 3-Buchstabencode des nächstgelegenen Flughafens zu verwenden).
+	NL	Het weerbericht is opgehaald van <i>Weather Underground&reg;</i>. Om het weerbericht te localiseren heb je de citycode van wunderground.com nodig. Bijvoorbeeld AMS voor Amsterdam-Schiphol (Airport-Code).
+	SE	Väderprognos hämtas från <i>Weather Underground&reg;</i>. To localize your forecast you also need to find out a unambiguous wunderground.com citycode. It is advisable to use the 3-letter-code of your nearest airport, e.g. TXL for Berlin-Tegel, Germany.
+	DA	Vejrprognosen hentes fra <i>Weather Underground&reg;</i>. For lokal prognose skal du finde wunderground.com by koden, f.eks RKE for Roskilde, Danmark (Airport-Code).
+
 SETUP_PLUGIN_WEATHERTIME_UNITS
 	EN	Weather Units
 	FR	Unités Météo
