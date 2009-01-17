@@ -1,19 +1,20 @@
 <?xml version="1.0"?>
 <extensions>
-    <details>
+  <details>
+    <title lang="EN">WeatherTime Screensaver</title>
+  </details>
+  <plugins>
+    <plugin name="WeatherTime" version="2.2.1" minTarget="7.2" maxTarget="7.*">
       <title lang="EN">WeatherTime Screensaver</title>
-   </details>
-   <plugins>
-      <plugin name="WeatherTime" version="2.2" minTarget="7.3" maxTarget="*">
-        <title lang="EN">WeatherTime Screensaver</title>
-        <desc lang="EN">The weather data is retrieved from Weather Underground (tm). To localize you
-r forecast you also need to find out a unambiguous wunderground.com citycode. It is advisable to use
- the 3-letter-code of your nearest airport, e.g. TXL for Berlin-Tegel, Germany.</desc>
-        <changes lang="EN">Support for Squeezecenter 7.2/7.3</changes>
-        <creator>Martin Rehfeld</creator>
-        <email>martin.rehfeld@glnetworks.de</email>
-        <url>http://weathertime.googlecode.com/files/Plugins-WeatherTime-Plugin%20r144.zip</url>
-        <sha>a185ac6d1d114bbfcce3124e3fc90fa609a0e603</sha>
-      </plugin>
-    </plugins>
+      <desc lang="EN">The weather data is retrieved from Weather Underground (tm). To localize your
+        forecast you also need to find out a unambiguous wunderground.com citycode. It is advisable to use
+        the 3-letter-code of your nearest airport, e.g. TXL for Berlin-Tegel, Germany.
+      </desc>
+      <changes lang="EN">Support for Squeezecenter 7.2/7.3</changes>
+      <creator>Martin Rehfeld</creator>
+      <email>martin.rehfeld@glnetworks.de</email>
+      <url>http://weathertime.googlecode.com/files/Plugins-WeatherTime-Plugin%20r152.zip</url>
+      <sha>e8b34f544e69a034bbc8c27f2abf7caaba4e1b3d</sha>
+    </plugin>
+  </plugins>
 </extensions>
