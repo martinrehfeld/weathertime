@@ -1,12 +1,12 @@
 <?xml version='1.0' standalone='yes'?>
 <extension>
   <name>PLUGIN_SCREENSAVER_WEATHERTIME</name>
-	<optionsURL>plugins/WeatherTime/settings/basic.html</optionsURL>
+  <optionsURL>plugins/WeatherTime/settings/basic.html</optionsURL>
   <creator>Martin Rehfeld</creator>
   <defaultState>enabled</defaultState>
   <description>PLUGIN_SCREENSAVER_WEATHERTIME_DESC</description>
   <email>martin.rehfeld@glnetworks.de</email>
-  <homepageURL>http://inside.glnetworks.de</homepageURL>
+  <homepageURL>http://inside.glnetworks.de/category/slimserver/</homepageURL>
   <id>5F8B7494-9134-11DB-9298-A5FA82197972</id>
   <module>Plugins::WeatherTime::Plugin</module>
 
