@@ -4,7 +4,7 @@
       <title lang="EN">WeatherTime Screensaver</title>
    </details>
    <plugins>
-      <plugin name="AppletName" version="2.2" minTarget="7.3" maxTarget="*">
+      <plugin name="WeatherTime" version="2.2" minTarget="7.3" maxTarget="*">
         <title lang="EN">WeatherTime Screensaver</title>
         <desc lang="EN">The weather data is retrieved from Weather Underground (tm). To localize you
 r forecast you also need to find out a unambiguous wunderground.com citycode. It is advisable to use
