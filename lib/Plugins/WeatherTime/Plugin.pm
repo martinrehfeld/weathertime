@@ -85,6 +85,7 @@
 #	                  provided by Wunderground and merged translation
 #	                  updates for FR and NL
 #	2009/01/17 v2.2   Officially support Versions 7.2/7.3 of SqueezeCenter
+#	           v2.2.1  + last minute fixes for Extension Installer
 #
 #	----------------------------------------------------------------------
 #	To do:
@@ -141,7 +142,7 @@ use Slim::Utils::Log;
 use Weather::Wunderground;
 
 use vars qw($VERSION);
-$VERSION = substr( q$Revision: 2.2 $, 10 );
+$VERSION = substr( q$Revision: 2.2.1 $, 10 );
 
 use Slim::Utils::Strings qw (string);
 use Socket;
