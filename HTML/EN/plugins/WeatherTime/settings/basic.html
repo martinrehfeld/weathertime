@@ -1,0 +1,93 @@
+[% PROCESS settings/header.html %]
+
+[% WRAPPER settingSection %]
+
+	[% WRAPPER settingGroup title="SETUP_GROUP_PLUGIN_WEATHERTIME" desc="SETUP_GROUP_PLUGIN_WEATHERTIME_DESC" %]
+		[% WRAPPER setting title="SETUP_PLUGIN_WEATHERTIME_UNITS" desc="" %]
+			<select class="stdedit" name="pref_units" id="pref_units">
+				[% FOREACH option = {
+					'1'   => 'SETUP_PLUGIN_WEATHERTIME_1',
+					'0'   => 'SETUP_PLUGIN_WEATHERTIME_0',
+				} %]
+					<option [% IF prefs.pref_units == option.key %]selected [% END %]value="[% option.key %]">[% option.value | string %]</option>
+				[%- END -%]
+			</select>
+		[% END %]
+
+		[% WRAPPER setting title="SETUP_PLUGIN_WEATHERTIME_CITY" desc="" %]
+			<input type="text" class="stdedit" name="pref_city" id="pref_city" value="[% prefs.pref_city %]" size="40">
+		[% END %]
+	
+		[% WRAPPER setting title="SETUP_PLUGIN_WEATHERTIME_CITYCODE" desc="" %]
+			<input type="text" class="stdedit" name="pref_citycode" id="pref_citycode" value="[% prefs.pref_citycode %]" size="40">
+		[% END %]
+	
+		[% WRAPPER setting title="SETUP_PLUGIN_WEATHERTIME_INTERVAL" desc="" %]
+			<input type="text" class="stdedit" name="pref_interval" id="pref_interval" value="[% prefs.pref_interval %]" size="40">
+		[% END %]
+
+		[% WRAPPER setting title="SETUP_PLUGIN_WEATHERTIME_TIMEDATEFORMAT" desc="" %]
+			<select class="stdedit" name="pref_timedateformat" id="pref_timedateformat">
+	
+			[% FOREACH option = {
+					'std' => 'SETUP_PLUGIN_WEATHERTIME_STDDATE',
+					'timedate' => 'SETUP_PLUGIN_WEATHERTIME_TIMEDATE',
+					'dateonly' => 'SETUP_PLUGIN_WEATHERTIME_DATEONLY',
+					'none' => 'SETUP_PLUGIN_WEATHERTIME_NODATE',
+			} %]
+				<option [% IF prefs.pref_timedateformat == option.key %]selected [% END %] value="[% option.key %]">[% option.value | string %]</option>
+			[%- END -%]
+			</select>
+		[% END %]
+
+		[% WRAPPER setting title="SETUP_PLUGIN_WEATHERTIME_DATEFORMAT" desc="" %]
+			<select class="stdedit" name="pref_dateformat" id="pref_dateformat">
+			[% FOREACH option = {
+					'%m/%d' => 'MM/DD',
+					'%m-%d' => 'MM-DD',
+					'%m.%d.' => 'MM.DD.',
+					'%d/%m' => 'DD/MM',
+					'%d-%m' => 'DD-MM',
+					'%d.%m.' => 'DD.MM.',
+					'%b %d' => 'MMM DD',
+					'%d %b' => 'DD MMM',
+          '%a %m/%d' => 'WWW MM/DD',
+          '%a %m-%d' => 'WWW MM-DD',
+          '%a %m.%d' => 'WWW MM.DD',
+          '%a %d/%m' => 'WWW DD/MM',
+          '%a %d-%m' => 'WWW DD-MM',
+          '%a %d.%m' => 'WWW DD.MM'
+			} %]
+				<option [% IF prefs.pref_dateformat == option.key %]selected [% END %] value="[% option.key %]">[% option.value %]</option>
+			[%- END -%]
+			
+			</select>
+		[% END %]
+
+		[% WRAPPER setting title="SETUP_PLUGIN_WEATHERTIME_LINETHREE" desc="" %]
+			<select class="stdedit" name="pref_linethree" id="pref_linethree">
+				[% FOREACH option = {
+					'1'   => 'SETUP_PLUGIN_WEATHERTIME_LINETHREE_1',
+					'0'   => 'SETUP_PLUGIN_WEATHERTIME_LINETHREE_0',
+				} %]
+					<option [% IF prefs.pref_linethree == option.key %]selected [% END %]value="[% option.key %]">[% option.value | string %]</option>
+				[%- END -%]
+			</select>
+		[% END %]
+
+		[% WRAPPER setting title="SETUP_PLUGIN_WEATHERTIME_LINETHREE_UNIT" desc="" %]
+			<select class="stdedit" name="pref_linethreeunit" id="pref_linethreeunit">
+				[% FOREACH option = {
+					'2'   => 'SETUP_PLUGIN_WEATHERTIME_LINETHREE_UNIT_2',
+					'1'   => 'SETUP_PLUGIN_WEATHERTIME_LINETHREE_UNIT_1',
+					'0'   => 'SETUP_PLUGIN_WEATHERTIME_LINETHREE_UNIT_0',
+				} %]
+					<option [% IF prefs.pref_linethreeunit == option.key %]selected [% END %]value="[% option.key %]">[% option.value | string %]</option>
+				[%- END -%]
+			</select>
+		[% END %]
+	[% END %]
+
+[% END %]
+
+[% PROCESS settings/footer.html %]
