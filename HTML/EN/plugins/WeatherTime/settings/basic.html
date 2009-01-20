@@ -51,12 +51,13 @@
 					'%d.%m.' => 'DD.MM.',
 					'%b %d' => 'MMM DD',
 					'%d %b' => 'DD MMM',
-          '%a %m/%d' => 'WWW MM/DD',
-          '%a %m-%d' => 'WWW MM-DD',
-          '%a %m.%d' => 'WWW MM.DD',
-          '%a %d/%m' => 'WWW DD/MM',
-          '%a %d-%m' => 'WWW DD-MM',
-          '%a %d.%m' => 'WWW DD.MM'
+					'%a %m/%d' => 'WWW MM/DD',
+					'%a %m-%d' => 'WWW MM-DD',
+					'%a %m.%d' => 'WWW MM.DD',
+					'%a %d/%m' => 'WWW DD/MM',
+					'%a %d-%m' => 'WWW DD-MM',
+					'%a %d.%m' => 'WWW DD.MM',
+					'%a %d %b' => 'WWW DD MMM'
 			} %]
 				<option [% IF prefs.pref_dateformat == option.key %]selected [% END %] value="[% option.key %]">[% option.value %]</option>
 			[%- END -%]
