@@ -13,7 +13,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME
 	FR	Température, Date et Heure
 	DE	Wetter/Zeit Bildschirmschoner
 	NL	Weer, datum en tijd
-	SE	Väder, datum och tid
+	SV	Väder, datum och tid
 	DA	Vejr, dato og tid
 
 PLUGIN_SCREENSAVER_WEATHERTIME_START
@@ -21,7 +21,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME_START
 	FR	Appuyez sur PLAY pour activer cet écran de veille
 	DE	PLAY drücken zum Starten des Bildschirmschoners
 	NL	Druk op PLAY om deze schermbeveiliger aan te zetten
-	SE	Tryck PLAY för att aktivera skärmsläckaren
+	SV	Tryck PLAY för att starta
 	DA	Tryk PLAY for at starte screensaver
 
 PLUGIN_SCREENSAVER_WEATHERTIME_ENABLE
@@ -29,7 +29,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME_ENABLE
 	FR	Appuyez sur PLAY pour activer cet écran de veille
 	DE	PLAY drücken zum Aktivieren des Bildschirmschoners
 	NL	Druk op PLAY om deze schermbeveiliger aan te zetten
-	SE	Tryck PLAY för att aktivera skärmsläckaren
+	SV	Tryck PLAY för att aktivera skärmsläckaren
 	DA	Tryk PLAY for at aktivere screensaver
 
 PLUGIN_SCREENSAVER_WEATHERTIME_DISABLE
@@ -37,7 +37,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME_DISABLE
 	FR	Appuyer sur PLAY pour désactiver cet écran de veille
 	DE	PLAY drücken zum Deaktivieren dieses Bildschirmschoners
 	NL	Druk op PLAY om deze schermbeveiliger uit te zetten
-	SE	Tryck PLAY för att inaktivera skärmsläckaren
+	SV	Tryck PLAY för att inaktivera skärmsläckaren
 	DA	Tryk PLAY for at inaktivere screensaver
 
 PLUGIN_SCREENSAVER_WEATHERTIME_ENABLING
@@ -45,7 +45,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME_ENABLING
 	FR	Activation de WeatherTime comme écran de veille actuel
 	DE	Wetter/Zeit Bildschirmschoner aktivieren
 	NL	Aanzetten van Weer, datum en tijd als huidige schermbeveiliger
-	SE	Aktiverar WeatherTime som skärmsläckare
+	SV	Aktiverar WeatherTime som skärmsläckare
 	DA	Aktiver WeatherTime som screensaver
 
 PLUGIN_SCREENSAVER_WEATHERTIME_DISABLING
@@ -53,7 +53,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME_DISABLING
 	FR	Retour à l'écran de veille par défaut
 	DE	Standard-Bildschirmschoner deaktivieren
 	NL	Herstellen standaard schermbeveiliger
-	SE	Återställer till default skärmsläckare
+	SV	Återställer till default skärmsläckare
 	DA	Reset til default screensaver
 
 PLUGIN_SCREENSAVER_WEATHERTIME_UPDATING
@@ -61,7 +61,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME_UPDATING
 	FR	Mise à jour des prévisions météo...
 	DE	Aktualisiere aktuelle Wetterdaten...
 	NL	Bijwerken weersvoorspelling
-	SE	Uppdaterar väderprognos...
+	SV	Uppdaterar väderprognos...
 	DA	Opdaterer vejr prognose
 
 PLUGIN_SCREENSAVER_NOSETUP_LINE1
@@ -69,7 +69,7 @@ PLUGIN_SCREENSAVER_NOSETUP_LINE1
 	FR	Configuration requis
 	DE	Setup erforderlich
 	NL	Instellen noodzakelijk
-	SE	Inställningar krävs
+	SV	Inställningar krävs
 	DA	Setup kræves
 
 PLUGIN_SCREENSAVER_NOSETUP_LINE2
@@ -77,7 +77,7 @@ PLUGIN_SCREENSAVER_NOSETUP_LINE2
 	FR	Entrez dans les paramètres de serveur.
 	DE	Server settings eintragen.
 	NL	Server instellingen invoeren
-	SE	(server-inställningar)
+	SV	Server-inställningar
 	DA	(server-indstilninger).
 
 SETUP_GROUP_PLUGIN_WEATHERTIME
@@ -85,7 +85,7 @@ SETUP_GROUP_PLUGIN_WEATHERTIME
 	FR	Ecran de veille Température, Date et Heure
 	DE	Wetter/Zeit Bildschirmschoner
 	NL	Weer, datum en tijd schermbeveiliger
-	SE	Väder, datum och tid skärmsläckare
+	SV	Väder, datum och tid skärmsläckare
 	DA	Vejr, dato og tid screensaver
 
 SETUP_GROUP_PLUGIN_WEATHERTIME_DESC
@@ -93,7 +93,7 @@ SETUP_GROUP_PLUGIN_WEATHERTIME_DESC
 	FR	L'information météo est extraite de <i>Weather Underground&reg;</i>. Pour localiser vos prévisions vous devez aussi déterminer le code de ville de wunderground.com, par exemple YUL pour Montréal, Canada (Airport-Code).
 	DE	Die Wetterdaten werden von <i>Weather Underground&reg;</i> bezogen. Der Citycode stammt ebenfalls von wunderground.com, zum Beispiel TXL für Berlin-Tegel (es empfiehlt sich, den 3-Buchstabencode des nächstgelegenen Flughafens zu verwenden).
 	NL	Het weerbericht is opgehaald van <i>Weather Underground&reg;</i>. Om het weerbericht te localiseren heb je de citycode van wunderground.com nodig. Bijvoorbeeld AMS voor Amsterdam-Schiphol (Airport-Code).
-	SE	Väderprognos hämtas från <i>Weather Underground&reg;</i>. To localize your forecast you also need to find out a unambiguous wunderground.com citycode. It is advisable to use the 3-letter-code of your nearest airport, e.g. TXL for Berlin-Tegel, Germany.
+	SV	Väderprognos hämtas från <i>Weather Underground&reg;</i>. För lokal prognos måste du ange end out a entydig stads-kod från wunderground.com. Det är lämpligt att ange en 3-bokstavs förkortning för närmaste flygplats, tex ARN för Arlanda, Stockholm, Sverige.
 	DA	Vejrprognosen hentes fra <i>Weather Underground&reg;</i>. For lokal prognose skal du finde wunderground.com by koden, f.eks RKE for Roskilde, Danmark (Airport-Code).
 
 PLUGIN_SCREENSAVER_WEATHERTIME_DESC
@@ -101,7 +101,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME_DESC
 	FR	L'information météo est extraite de <i>Weather Underground&reg;</i>. Pour localiser vos prévisions vous devez aussi déterminer le code de ville de wunderground.com, par exemple YUL pour Montréal, Canada (Airport-Code).
 	DE	Die Wetterdaten werden von <i>Weather Underground&reg;</i> bezogen. Der Citycode stammt ebenfalls von wunderground.com, zum Beispiel TXL für Berlin-Tegel (es empfiehlt sich, den 3-Buchstabencode des nächstgelegenen Flughafens zu verwenden).
 	NL	Het weerbericht is opgehaald van <i>Weather Underground&reg;</i>. Om het weerbericht te localiseren heb je de citycode van wunderground.com nodig. Bijvoorbeeld AMS voor Amsterdam-Schiphol (Airport-Code).
-	SE	Väderprognos hämtas från <i>Weather Underground&reg;</i>. To localize your forecast you also need to find out a unambiguous wunderground.com citycode. It is advisable to use the 3-letter-code of your nearest airport, e.g. TXL for Berlin-Tegel, Germany.
+	SV	Väderprognos hämtas från <i>Weather Underground&reg;</i>. För lokal prognos måste du ange end out a entydig stads-kod från wunderground.com. Det är lämpligt att ange en 3-bokstavs förkortning för närmaste flygplats, tex ARN för Arlanda, Stockholm, Sverige.
 	DA	Vejrprognosen hentes fra <i>Weather Underground&reg;</i>. For lokal prognose skal du finde wunderground.com by koden, f.eks RKE for Roskilde, Danmark (Airport-Code).
 
 SETUP_PLUGIN_WEATHERTIME_UNITS
@@ -109,7 +109,7 @@ SETUP_PLUGIN_WEATHERTIME_UNITS
 	FR	Unités Météo
 	DE	Einheiten
 	NL	Eenheden
-	SE	Enheter
+	SV	Enheter
 	DA	Enheder
 
 SETUP_PLUGIN_WEATHERTIME_1
@@ -117,7 +117,7 @@ SETUP_PLUGIN_WEATHERTIME_1
 	FR	Unités Métriques
 	DE	Metrisch
 	NL	Metrisch
-	SE	Meter
+	SV	Metriska
 	DA	Meter
 
 SETUP_PLUGIN_WEATHERTIME_0
@@ -125,7 +125,7 @@ SETUP_PLUGIN_WEATHERTIME_0
 	FR	Unités Impériales
 	DE	Englisch
 	NL	Engels
-	SE	Engelska enheter
+	SV	Engelska enheter
 	DA	Engelske enheder
 
 SETUP_PLUGIN_WEATHERTIME_LINETHREE
@@ -133,49 +133,56 @@ SETUP_PLUGIN_WEATHERTIME_LINETHREE
 	DE	Dritte Zeile
 	NL	Derde regel
 	DA	Tredje linie
+	SV	Tredje raden
 
 SETUP_PLUGIN_WEATHERTIME_LINETHREE_0
 	EN	Precipitation chance
 	DE	Regenwahrscheinlichkeit
 	NL	Kans op regen
 	DA	Risiko for regn
+	SV	Risk för nederbörd
 
 SETUP_PLUGIN_WEATHERTIME_LINETHREE_1
 	EN	Wind info
 	DE	Windrichtung
 	NL	Windrichting
 	DA	Vind info
+	SV	Vind info
 
 SETUP_PLUGIN_WEATHERTIME_LINETHREE_UNIT
 	EN	Wind info units
 	DE	Wind-Einheit
 	NL	Wind eenheid
-	DA	Vind info enheder
+	DA	Enheter för vind data
+	SV	Vind info enheter
 
 SETUP_PLUGIN_WEATHERTIME_LINETHREE_UNIT_0
 	EN	Meters per second
 	DE	Meter pro Sekunde
 	NL	Meter per seconde
 	DA	Meter pr. sekund
+	SV	m/s
 
 SETUP_PLUGIN_WEATHERTIME_LINETHREE_UNIT_1
 	EN	Kilometers per hour
 	DE	Kilometer pro Stunde
 	NL	Kilometer per uur
 	DA	Kilometer i timen
+	SV	km/h
 
 SETUP_PLUGIN_WEATHERTIME_LINETHREE_UNIT_2
 	EN	Miles per hour
 	DE	Meilen pro Stunde
 	NL	Mijl per uur
 	DA	Miles i timen
+	SV	mph
 
 SETUP_PLUGIN_WEATHERTIME_CITY
 	EN	City
 	FR	Ville
 	DE	Name der Stadt
 	NL	Plaatsnaam
-	SE	Stad
+	SV	Stad
 	DA	By
 
 SETUP_PLUGIN_WEATHERTIME_CITYCODE
@@ -183,7 +190,7 @@ SETUP_PLUGIN_WEATHERTIME_CITYCODE
 	FR	Code de ville Wunderground.com
 	DE	Wunderground.com Citycode
 	NL	Wunderground.com plaatscode
-	SE	Wunderground.com stadskod
+	SV	Statdskod från Wunderground.com
 	DA	Wunderground.com bykode
 
 SETUP_PLUGIN_WEATHERTIME_INTERVAL
@@ -191,7 +198,7 @@ SETUP_PLUGIN_WEATHERTIME_INTERVAL
 	FR	Intervalle de mise-à-jour (secondes)
 	DE	Aktualisierungsintervall (sekunden)
 	NL	Interval voor bijwerken (seconden)
-	SE	Uppdateringsfrekvens (sekunder)
+	SV	Uppdateringsfrekvens (sekunder)
 	DA	Uppdateringsfrekvens (sekunder)
 
 SETUP_PLUGIN_WEATHERTIME_TIMEDATEFORMAT
@@ -199,7 +206,7 @@ SETUP_PLUGIN_WEATHERTIME_TIMEDATEFORMAT
 	FR	Format des Heure/dates
 	DE	Zeit/Datumsformat
 	NL	Tijd/Datumformaat
-	SE	Tid/Datumformat
+	SV	Tid/Datumformat
 	DA	Tid/Datoformat
 
 SETUP_PLUGIN_WEATHERTIME_DATEFORMAT
@@ -207,7 +214,7 @@ SETUP_PLUGIN_WEATHERTIME_DATEFORMAT
 	FR	Format des dates
 	DE	Datumsformat
 	NL	Datumformaat
-	SE	Datumformat
+	SV	Datumformat
 	DA	Datoformat
 
 SETUP_PLUGIN_WEATHERTIME_STDDATE
@@ -215,7 +222,7 @@ SETUP_PLUGIN_WEATHERTIME_STDDATE
 	FR	Standard
 	DE	Standardformat
 	NL	Standaardformat
-	SE	Standard
+	SV	Standard
 	DA	Standard
 
 SETUP_PLUGIN_WEATHERTIME_TIMEDATE
@@ -223,7 +230,7 @@ SETUP_PLUGIN_WEATHERTIME_TIMEDATE
 	FR	Heure et Date
 	DE	Zeit und Datum
 	NL	Tijd en Datum 
-	SE	Tid och Datum 
+	SV	Tid och Datum 
 	DA	Tid og Dato 
 
 SETUP_PLUGIN_WEATHERTIME_NODATE
@@ -231,7 +238,7 @@ SETUP_PLUGIN_WEATHERTIME_NODATE
 	FR	Sans date (heure seulement)
 	DE	Kein Datum (nur Zeit)
 	NL	Geen datum (alleen de tijd)
-	SE	Inget datum (endast tid)
+	SV	Inget datum (endast tid)
 	DA	Ingen dato (kun tid)
 
 SETUP_PLUGIN_WEATHERTIME_DATEONLY
@@ -239,7 +246,7 @@ SETUP_PLUGIN_WEATHERTIME_DATEONLY
 	FR	Sans heure (date seulement)
 	DE	Keine Zeit (nur Datum)
 	NL	Geen tijd (alleen de datum)
-	SE	Inget tid (endast datum)
+	SV	Ingen tid (endast datum)
 	DA	Ingen tid (kun dato)
 
 PLUGIN_SCREENSAVER_WEATHERTIME_NOINFO
@@ -247,7 +254,7 @@ PLUGIN_SCREENSAVER_WEATHERTIME_NOINFO
 	FR	Chargement...
 	DE	Lade...
 	NL	Laden...
-	SE	hämtas...
+	SV	Laddar...
 	DA	hentes...
 
 PLUGIN_WEATHERTIME_NO_FORECAST_AVAILABLE
@@ -255,7 +262,7 @@ PLUGIN_WEATHERTIME_NO_FORECAST_AVAILABLE
 	FR	Prévisions non disponibles
 	DE	Keine Vorhersage vorhanden
 	NL	Geen weerbericht beschikbaar
-	SE	Ingen prognos tillgänglig
+	SV	Ingen prognos tillgänglig
 	DA	Ingen prognose tilgængelig
 
 PLUGIN_WEATHERTIME_CURRENTTEMP
@@ -263,7 +270,7 @@ PLUGIN_WEATHERTIME_CURRENTTEMP
 	FR	Maintenant
 	DE	Jetzt
 	NL	Nu
-	SE	Nu
+	SV	Nu
 	DA	Nu
 
 PLUGIN_WEATHERTIME_TODAY
@@ -271,7 +278,7 @@ PLUGIN_WEATHERTIME_TODAY
 	FR	Aujourd'hui
 	DE	Heute
 	NL	Vandaag
-	SE	Idag
+	SV	Idag
 	DA	I dag
 
 PLUGIN_WEATHERTIME_TONIGHT
@@ -279,7 +286,7 @@ PLUGIN_WEATHERTIME_TONIGHT
 	FR	Ce soir
 	DE	Nachts
 	NL	Vannacht
-	SE	Ikväll
+	SV	Ikväll
 	DA	I aften
 
 PLUGIN_WEATHERTIME_TOMORROW
@@ -287,7 +294,7 @@ PLUGIN_WEATHERTIME_TOMORROW
 	FR	Demain
 	DE	Morgen
 	NL	Morgen
-	SE	Imorgon
+	SV	Imorgon
 	DA	I morgen
 
 PLUGIN_WEATHERTIME_SUNDAY
@@ -295,7 +302,7 @@ PLUGIN_WEATHERTIME_SUNDAY
 	FR	Dimanche
 	DE	Sonntag
 	NL	Zondag
-	SE	Söndag
+	SV	Söndag
 	DA	Søndag
 
 PLUGIN_WEATHERTIME_MONDAY
@@ -303,7 +310,7 @@ PLUGIN_WEATHERTIME_MONDAY
 	FR	Lundi
 	DE	Montag
 	NL	Maandag
-	SE	Måndag
+	SV	Måndag
 	DA	Mandag
 
 PLUGIN_WEATHERTIME_TUESDAY
@@ -311,7 +318,7 @@ PLUGIN_WEATHERTIME_TUESDAY
 	FR	Mardi
 	DE	Dienstag
 	NL	Dinsdag
-	SE	Tisdag
+	SV	Tisdag
 	DA	Tirsdag
 
 PLUGIN_WEATHERTIME_WEDNESDAY
@@ -319,7 +326,7 @@ PLUGIN_WEATHERTIME_WEDNESDAY
 	FR	Mercredi
 	DE	Mittwoch
 	NL	Woensdag
-	SE	Onsdag
+	SV	Onsdag
 	DA	Onsdag
 
 PLUGIN_WEATHERTIME_THURSDAY
@@ -327,7 +334,7 @@ PLUGIN_WEATHERTIME_THURSDAY
 	FR	Jeudi
 	DE	Donnerstag
 	NL	Donderdag
-	SE	Torsdag
+	SV	Torsdag
 	DA	Torsdag
 
 PLUGIN_WEATHERTIME_FRIDAY
@@ -335,7 +342,7 @@ PLUGIN_WEATHERTIME_FRIDAY
 	FR	Vendredi
 	DE	Freitag
 	NL	Vrijdag
-	SE	Fredag
+	SV	Fredag
 	DA	Fredag
 
 PLUGIN_WEATHERTIME_SATURDAY
@@ -343,7 +350,7 @@ PLUGIN_WEATHERTIME_SATURDAY
 	FR	Samedi
 	DE	Samstag
 	NL	Zaterdag
-	SE	Lördag
+	SV	Lördag
 	DA	Lørdag
 
 PLUGIN_WEATHERTIME_NIGHT
@@ -351,7 +358,7 @@ PLUGIN_WEATHERTIME_NIGHT
 	FR	Nuit
 	DE	Nachts
 	NL	's Nachts
-	SE	Natt
+	SV	Natt
 	DA	Nat
 
 PLUGIN_WEATHERTIME_DAY
@@ -359,7 +366,7 @@ PLUGIN_WEATHERTIME_DAY
 	FR	Jour
 	DE	Tagsüber
 	NL	Overdag
-	SE	Dag
+	SV	Dag
 	DA	Dag
 
 PLUGIN_WEATHERTIME_HIGH
@@ -367,7 +374,7 @@ PLUGIN_WEATHERTIME_HIGH
 	FR	Maximum
 	DE	Max
 	NL	Max
-	SE	Max
+	SV	Max
 	DA	Maks
 
 PLUGIN_WEATHERTIME_LOW
@@ -375,7 +382,7 @@ PLUGIN_WEATHERTIME_LOW
 	FR	Minimum
 	DE	Min
 	NL	Min
-	SE	Min
+	SV	Min
 	DA	Min
 
 PLUGIN_WEATHERTIME_PRECIP
@@ -383,7 +390,7 @@ PLUGIN_WEATHERTIME_PRECIP
 	FR	Précip
 	DE	Regen
 	NL	Regen
-	SE	Nederbörd
+	SV	Nederbörd
 	DA	NedbØr
 
 PLUGIN_WEATHERTIME_CLOUDY
@@ -391,7 +398,7 @@ PLUGIN_WEATHERTIME_CLOUDY
 	FR	Nuageux
 	DE	bewölkt
 	NL	zwaarbewolkt
-	SE	Mulet
+	SV	Mulet
 	DA	Skyet
 
 PLUGIN_WEATHERTIME_MOSTLY_CLOUDY
@@ -399,7 +406,7 @@ PLUGIN_WEATHERTIME_MOSTLY_CLOUDY
 	FR	Plutôt nuageux
 	DE	Meist bewölkt
 	NL	Bewolkt
-	SE	Övervägande mulet
+	SV	Övervägande Mulet
 	DA	Mest skyet
 
 PLUGIN_WEATHERTIME_PARTLY_CLOUDY
@@ -407,7 +414,7 @@ PLUGIN_WEATHERTIME_PARTLY_CLOUDY
 	FR	Partiellement nuageux
 	DE	Teilw. bewölkt
 	NL	Halfbewolkt
-	SE	Halvklart
+	SV	Halvklart
 	DA	Let skyet
 
 PLUGIN_WEATHERTIME_LIGHT_RAIN
@@ -415,7 +422,7 @@ PLUGIN_WEATHERTIME_LIGHT_RAIN
 	FR	Pluie légère
 	DE	Etwas Regen
 	NL	Enige regen
-	SE	Lätt regn
+	SV	Lätt Regn
 	DA	Let regn
 
 PLUGIN_WEATHERTIME_LIGHT_RAIN_WIND
@@ -423,7 +430,7 @@ PLUGIN_WEATHERTIME_LIGHT_RAIN_WIND
 	FR	Pluie légère / Vent
 	DE	Etwas Regen, Wind
 	NL	Enige regen / winderig
-	SE	Lätt regn / vind
+	SV	Lätt Regn/Vind
 	DA	Let regn/blæst
 
 PLUGIN_WEATHERTIME_SHOWERS
@@ -431,7 +438,7 @@ PLUGIN_WEATHERTIME_SHOWERS
 	FR	Averses
 	DE	Schauer
 	NL	Buien
-	SE	Skurar
+	SV	Skurar
 	DA	Byger
 
 PLUGIN_WEATHERTIME_RAIN
@@ -439,7 +446,7 @@ PLUGIN_WEATHERTIME_RAIN
 	FR	Pluie
 	DE	Regen
 	NL	Regen
-	SE	Regn
+	SV	Regn
 	DA	Regn
 
 PLUGIN_WEATHERTIME_AM_SHOWERS
@@ -447,7 +454,7 @@ PLUGIN_WEATHERTIME_AM_SHOWERS
 	FR	Averses AM
 	DE	Vorm. Schauer
 	NL	Ocht. buien
-	SE	Fm. skurar
+	SV	Fm Skurar
 	DA	Fm. byger
 
 PLUGIN_WEATHERTIME_SHOWERS_EARLY
@@ -455,7 +462,7 @@ PLUGIN_WEATHERTIME_SHOWERS_EARLY
 	FR	Averses Tôt
 	DE	Anfangs Schauer
 	NL	Vroeg buien
-	SE	Fm. skurar
+	SV	Tidigt: Skurar
 	DA	Fm. byger
 
 PLUGIN_WEATHERTIME_SHOWERS_LATE
@@ -463,7 +470,7 @@ PLUGIN_WEATHERTIME_SHOWERS_LATE
 	FR	Averses Tard
 	DE	Abends Schauer
 	NL	Avond buien
-	SE	Em. skurar
+	SV	Sent: Skurar
 	DA	Byger em.
 
 PLUGIN_WEATHERTIME_FOG
@@ -471,7 +478,7 @@ PLUGIN_WEATHERTIME_FOG
 	FR	Brouillard
 	DE	Nebel
 	NL	Mist
-	SE	Dimma
+	SV	Dimma
 	DA	TÅGE
 
 PLUGIN_WEATHERTIME_FEW_SHOWERS
@@ -479,7 +486,7 @@ PLUGIN_WEATHERTIME_FEW_SHOWERS
 	FR	Quelques Averses
 	DE	Vereinzelte Schauer
 	NL	Enkele buien
-	SE	Enstaka skurar
+	SV	Enstaka Skurar
 	DA	Enkelte byger
 
 PLUGIN_WEATHERTIME_MOSTLY_SUNNY
@@ -487,7 +494,7 @@ PLUGIN_WEATHERTIME_MOSTLY_SUNNY
 	FR	Plutôt Ensoleillé
 	DE	Meist sonnig
 	NL	Vooral zonnig
-	SE	Övervägande soligt
+	SV	Övervägande Soligt
 	DA	Mest solrigt
 
 PLUGIN_WEATHERTIME_SUNNY
@@ -495,7 +502,7 @@ PLUGIN_WEATHERTIME_SUNNY
 	FR	Ensoleillé
 	DE	Sonnig
 	NL	Zonnig
-	SE	Soligt
+	SV	Soligt
 	DA	Solrigt
 
 PLUGIN_WEATHERTIME_SCATTERED_FLURRIES
@@ -503,7 +510,7 @@ PLUGIN_WEATHERTIME_SCATTERED_FLURRIES
 	FR	Neige Passagère
 	DE	Böen aus wechselnder Richtung
 	NL	Lokaal buien
-	SE	Lokala regnbyar
+	SV	Enstaka Byar
 	DA	Lokale byger
 
 PLUGIN_WEATHERTIME_AM_CLOUDS_PM_SUN
@@ -511,7 +518,7 @@ PLUGIN_WEATHERTIME_AM_CLOUDS_PM_SUN
 	FR	Nuageux AM / Soleil PM
 	DE	Vorm. Wolken, nachm. Sonne
 	NL	Bewolkt later zonnig
-	SE	Uppsprickande molntäcke
+	SV	FM Moln / FM Sol
 	DA	Skyet senere sol
 
 PLUGIN_WEATHERTIME_CLOUDS_EARLY_CLEARING_LATE
@@ -519,7 +526,7 @@ PLUGIN_WEATHERTIME_CLOUDS_EARLY_CLEARING_LATE
 	FR	Nuages Tôt / Eclaircissements
 	DE	Anfangs Wolken / abends klar
 	NL	Bewolkt later opklaringen
-	SE	Uppsprickande molntäcke
+	SV	Uppsprickande Molntäcke
 	DA	Skyet senere opklaring
 
 PLUGIN_WEATHERTIME_ISOLATED_T-STORMS
@@ -527,7 +534,7 @@ PLUGIN_WEATHERTIME_ISOLATED_T-STORMS
 	FR	Orages Isolées
 	DE	vereinzelte Gewitter
 	NL	Een enkele onweersbui
-	SE	Enstaka åskväder
+	SV	Lokal Åska
 	DA	Enkelte tordenbyger
 
 PLUGIN_WEATHERTIME_SCATTERED_THUNDERSTORMS
@@ -535,7 +542,7 @@ PLUGIN_WEATHERTIME_SCATTERED_THUNDERSTORMS
 	FR	Orages Dispersées
 	DE	Verteilte Gewitter
 	NL	Lokaal onweersbuien
-	SE	Lokala åskväder
+	SV	Lokal Åskva
 	DA	Lokal storm
 
 PLUGIN_WEATHERTIME_SCATTERED_T-STORMS
@@ -543,7 +550,7 @@ PLUGIN_WEATHERTIME_SCATTERED_T-STORMS
 	FR	Orages Dispersées
 	DE	verteilte Gewitter
 	NL	Lokaal onweersbuien
-	SE	Lokala åskväder
+	SV	Lokal Åska
 	DA	Lokal torden
 
 PLUGIN_WEATHERTIME_SCATTERED_SHOWERS
@@ -551,7 +558,7 @@ PLUGIN_WEATHERTIME_SCATTERED_SHOWERS
 	FR	Averses Dispersées
 	DE	verteilte Schauer
 	NL	Lokaal buien
-	SE	Lokala skurar
+	SV	Lokala Skurar
 	DA	Lokale byger
 
 PLUGIN_WEATHERTIME_PM_SHOWERS
@@ -559,7 +566,7 @@ PLUGIN_WEATHERTIME_PM_SHOWERS
 	FR	Averses PM
 	DE	Nachm. Schauer
 	NL	Middag buien
-	SE	em. skurar
+	SV	EM Skurar
 	DA	Em. byger
 
 PLUGIN_WEATHERTIME_PM_SHOWERS_WIND
@@ -567,7 +574,7 @@ PLUGIN_WEATHERTIME_PM_SHOWERS_WIND
 	FR	Averses/Vent PM
 	DE	Nachm. Schauer/Wind
 	NL	Midd. buien/winderig
-	SE	Em. skurar, vind
+	SV	EM Skurar/Vind
 	DA	Em. byger og blæst
 
 PLUGIN_WEATHERTIME_RAIN_SNOW_SHOWERS
@@ -575,7 +582,7 @@ PLUGIN_WEATHERTIME_RAIN_SNOW_SHOWERS
 	FR	Averses Pluie/Neige
 	DE	Regen/Schneeschauer
 	NL	Regen/sneeuwbuien
-	SE	Regn/Snö
+	SV	Regn/Snöbyar
 	DA	Regn/sne byger
 
 PLUGIN_WEATHERTIME_FEW_SNOW_SHOWERS
@@ -583,7 +590,7 @@ PLUGIN_WEATHERTIME_FEW_SNOW_SHOWERS
 	FR	Quelques Averses de Neige
 	DE	Vereinzelte Schneeschauer
 	NL	Enkele sneeuwbuien
-	SE	Enstaka snöfall
+	SV	Enstaka Snöbyar
 	DA	Enkelte snebyger
 
 PLUGIN_WEATHERTIME_CLOUDY_WIND
@@ -591,7 +598,7 @@ PLUGIN_WEATHERTIME_CLOUDY_WIND
 	FR	Nuageux/Venteux
 	DE	Bewölkt/windig
 	NL	Zwaarbewolkt/winderig
-	SE	Mulet/blåst
+	SV	Mulet/Vind
 	DA	Skyer/Blæst
 
 PLUGIN_WEATHERTIME_FLURRIES_WIND
@@ -599,7 +606,7 @@ PLUGIN_WEATHERTIME_FLURRIES_WIND
 	FR	Neige/Vent
 	DE	Böeig/windig
 	NL	Windvlagen
-	SE	Byig vind
+	SV	Byig Vind
 	DA	Hård vind
 
 PLUGIN_WEATHERTIME_MOSTLY_CLOUDY_WINDY
@@ -607,7 +614,7 @@ PLUGIN_WEATHERTIME_MOSTLY_CLOUDY_WINDY
 	FR	Plutôt Nuageux/Venteux
 	DE	Meist bewölkt/windig
 	NL	Bewolkt/winderig
-	SE	Övervägande mulet/blåsigt
+	SV	Övervägande Mulet/Vind
 	DA	Mest Skyet/blæsende
 
 PLUGIN_WEATHERTIME_MOSTLY_CLOUDY_WIND
@@ -615,7 +622,7 @@ PLUGIN_WEATHERTIME_MOSTLY_CLOUDY_WIND
 	FR	Plutôt Nuageux/Venteux
 	DE	Meist bewölkt/windig
 	NL	Bewolkt/winderig
-	SE	Övervägande mulet/blåsigt
+	SV	Övervägande Mulet/Vind
 	DA	Mest Skyet/blæsende
 
 PLUGIN_WEATHERTIME_RAIN_THUNDER
@@ -623,7 +630,7 @@ PLUGIN_WEATHERTIME_RAIN_THUNDER
 	FR	Pluie/Orages
 	DE	Regen/Gewitter
 	NL	Regen/onweer
-	SE	Regn/åska
+	SV	Regn/Åska
 	DA	Regn/Torden
 
 PLUGIN_WEATHERTIME_PARTLY_CLOUDY_WIND
@@ -631,7 +638,7 @@ PLUGIN_WEATHERTIME_PARTLY_CLOUDY_WIND
 	FR	Partiellement Nuageux/Venteux
 	DE	Teilw. bewölkt/Wind
 	NL	Halfbewolkt/winderig
-	SE	Delvis mulet/vind
+	SV	Delvis Mulet/Vind
 	DA	Let skyet/blæsende
 
 PLUGIN_WEATHERTIME_AM_RAIN_SNOW_SHOWERS
@@ -639,7 +646,7 @@ PLUGIN_WEATHERTIME_AM_RAIN_SNOW_SHOWERS
 	FR	Pluie/Averses de neige AM
 	DE	Vorm. Regen/Schneeschauer
 	NL	Ocht. regen/sneeuwbui
-	SE	Em. Regn/snö
+	SV	FM Regn/Snöfall
 	DA	Em. Regn/Sne
 
 PLUGIN_WEATHERTIME_SHOWERS_WIND
@@ -647,7 +654,7 @@ PLUGIN_WEATHERTIME_SHOWERS_WIND
 	FR	Averses/Vent
 	DE	Schauer/Wind
 	NL	Buien/winderig
-	SE	Regn/blåst
+	SV	Skurar/Vind
 	DA	Regn/Blæst
 
 PLUGIN_WEATHERTIME_MOSTLY_SUNNY_WIND
@@ -655,7 +662,7 @@ PLUGIN_WEATHERTIME_MOSTLY_SUNNY_WIND
 	FR	Plutôt Ensoleillé/Vent
 	DE	Meist sonnig/Wind
 	NL	Vooral zonnig/winderig
-	SE	Övervägande soligt/vind
+	SV	Övervägande Sol/Vind
 	DA	Mest solrigt/blæsende
 
 PLUGIN_WEATHERTIME_FLURRIES
@@ -663,7 +670,7 @@ PLUGIN_WEATHERTIME_FLURRIES
 	FR	Neige
 	DE	Böen
 	NL	Buien
-	SE	Byar
+	SV	Byar
 	DA	Byger
 
 PLUGIN_WEATHERTIME_RAIN_WIND
@@ -671,7 +678,7 @@ PLUGIN_WEATHERTIME_RAIN_WIND
 	FR	Pluie/Vent
 	DE	Regen/Wind
 	NL	Regen/winderig
-	SE	Regn/vind
+	SV	Regn/Vind
 	DA	Regn/Blæst
 
 PLUGIN_WEATHERTIME_SCT_FLURRIES_WIND
@@ -679,7 +686,7 @@ PLUGIN_WEATHERTIME_SCT_FLURRIES_WIND
 	FR	Averses de Neige/Vent
 	DE	Verteilte, böeige Winde
 	NL	Lokaal buien/winderig
-	SE	Lokala vindbyar
+	SV	Lokala Vindbyar
 	DA	Lokal blæst
 
 PLUGIN_WEATHERTIME_SCT_STRONG_STORMS
@@ -687,7 +694,7 @@ PLUGIN_WEATHERTIME_SCT_STRONG_STORMS
 	FR	Fortes Tempêtes Dispersées
 	DE	Verteilte, heftige Stürme
 	NL	Lokaal zware stormen
-	SE	Lokala stormar
+	SV	Lokalt Starka Vindar
 	DA	Lokal hård storm
 
 PLUGIN_WEATHERTIME_PM_T-STORMS
@@ -695,7 +702,7 @@ PLUGIN_WEATHERTIME_PM_T-STORMS
 	FR	Orages PM
 	DE	Nachm. Gewitter
 	NL	Midd. onweersbuien
-	SE	Em. åska
+	SV	EM Åska
 	DA	Em. torden
 
 PLUGIN_WEATHERTIME_T-STORMS
@@ -703,7 +710,7 @@ PLUGIN_WEATHERTIME_T-STORMS
 	FR	Orages
 	DE	Gewitter
 	NL	Onweersbuien
-	SE	Åska
+	SV	Åska
 	DA	Torden
 
 PLUGIN_WEATHERTIME_THUNDERSTORM
@@ -727,7 +734,7 @@ PLUGIN_WEATHERTIME_SUNNY_WINDY
 	FR	Ensoleillé/Venteux
 	DE	Sonnig/windig
 	NL	Zonnig/winderig
-	SE	Soligt men blåsigt
+	SV	Sol/Vind
 	DA	Solrigt/blæsende
 
 PLUGIN_WEATHERTIME_AM_THUNDERSTORMS
@@ -735,7 +742,7 @@ PLUGIN_WEATHERTIME_AM_THUNDERSTORMS
 	FR	Orages AM
 	DE	Vorm. Gewitter
 	NL	Ocht. onweersbuien
-	SE	Fm. åskskurar
+	SV	FM Åska
 	DA	Fm. tordenbyger
 
 PLUGIN_WEATHERTIME_AM_RAIN
@@ -743,7 +750,7 @@ PLUGIN_WEATHERTIME_AM_RAIN
 	FR	Pluie AM
 	DE	Vorm. Regen
 	NL	Ochtend regen
-	SE	Fm. regn
+	SV	FM Regn
 	DA	Fm. regn
 
 PLUGIN_WEATHERTIME_ISO_T-Storms_WIND
@@ -751,7 +758,7 @@ PLUGIN_WEATHERTIME_ISO_T-Storms_WIND
 	FR	Orages/Vent Dispersés
 	DE	Vereinzelte Gewitter/Wind
 	NL	Enkele onweersbuien/winderig
-	SE	Lokala stormar/åska 
+	SV	Lokal Åska/Vindbyar
 	DA	Lokal Torden/blæst
 
 PLUGIN_WEATHERTIME_RAIN_SNOW
@@ -759,7 +766,7 @@ PLUGIN_WEATHERTIME_RAIN_SNOW
 	FR	Pluie/Neige
 	DE	Regen/Schnee
 	NL	Regen/sneeuw
-	SE	Regn/snö
+	SV	Regn/Snö
 	DA	Regn/Sne
 
 PLUGIN_WEATHERTIME_RAIN_SNOW_WIND
@@ -767,7 +774,7 @@ PLUGIN_WEATHERTIME_RAIN_SNOW_WIND
 	FR	Pluie/Neige/Vent
 	DE	Regen/Schnee/Wind
 	NL	Regen/sneeuw/winderig
-	SE	Regn/snö/vind
+	SV	Regn/Snö/Vind
 	DA	Regn/Sne/Blæst
 
 PLUGIN_WEATHERTIME_SCT_T-STORMS_WIND
@@ -775,7 +782,7 @@ PLUGIN_WEATHERTIME_SCT_T-STORMS_WIND
 	FR	Orages Dispersés/Vent
 	DE	Verteilte Gewitter/Wind
 	NL	Lokaal onweersbuien/winderig
-	SE	Lokala åskbyar, blåst
+	SV	Enstaka Åskoväder/Vindar
 	DA	Lokal torden/blæst
 
 PLUGIN_WEATHERTIME_AM_SHOWERS_WIND
@@ -783,7 +790,7 @@ PLUGIN_WEATHERTIME_AM_SHOWERS_WIND
 	FR	Averses/Vent AM
 	DE	Vorm. Schauer/Wind
 	NL	Ocht. buien/winderig
-	SE	Fm. skurar/blåst
+	SV	FM Skurar/Vind
 	DA	Fm. Byger/Blæst
 
 PLUGIN_WEATHERTIME_SHOWERS_WIND_EARLY
@@ -791,7 +798,7 @@ PLUGIN_WEATHERTIME_SHOWERS_WIND_EARLY
 	FR	Averses/Vent AM
 	DE	Vorm. Schauer/Wind
 	NL	Ocht. buien/winderig
-	SE	Fm. skurar/blåst
+	SV	Tidigt: Skurar/Vind
 	DA	Fm. Byger/Blæst
 
 PLUGIN_WEATHERTIME_SCT_SNOW_SHOWERS
@@ -799,7 +806,7 @@ PLUGIN_WEATHERTIME_SCT_SNOW_SHOWERS
 	FR	Averses de Neige Dispersées
 	DE	Verteilte Schneeschauer
 	NL	Lokaal sneeuwbuien
-	SE	Lokalt snöfall
+	SV	Enstaka Snöbyar
 	DA	Lokale snebyger
 
 PLUGIN_WEATHERTIME_SCATTERED_SNOW_SHOWERS
@@ -807,7 +814,7 @@ PLUGIN_WEATHERTIME_SCATTERED_SNOW_SHOWERS
 	FR	Averses de Neige Dispersées
 	DE	Verteilte Schneeschauer
 	NL	Lokaal sneeuwbuien
-	SE	Lokalt snöfall
+	SV	Enstaka Snöbyar
 	DA	Lokale snebyger
 
 PLUGIN_WEATHERTIME_SNOW_TO_ICE_WIND
@@ -815,7 +822,7 @@ PLUGIN_WEATHERTIME_SNOW_TO_ICE_WIND
 	FR	Neige à Glace/Vent
 	DE	Schnee in Hagel überg./Wind
 	NL	Sneeuw tot hagel/winderig
-	SE	Snö / hagel vind
+	SV	Snö eller Hagel/Vind
 	DA	Sne og hagl/blæst
 
 PLUGIN_WEATHERTIME_SNOW_TO_RAIN
@@ -823,7 +830,7 @@ PLUGIN_WEATHERTIME_SNOW_TO_RAIN
 	FR	Neige à Pluie
 	DE	Schnee in Regen überg.
 	NL	Sneeuw tot regen
-	SE	Snö eller regn
+	SV	Snö eller Regn
 	DA	Sne eller Regn
 
 PLUGIN_WEATHERTIME_AM_LIGHT_RAIN
@@ -831,7 +838,7 @@ PLUGIN_WEATHERTIME_AM_LIGHT_RAIN
 	FR	Pluie Légère AM
 	DE	Vorm. etwas Regen
 	NL	Ocht. enige regen
-	SE	Fm. lätt regn
+	SV	FM Lätt Regn
 	DA	Fm. let regn
 
 PLUGIN_WEATHERTIME_PM_LIGHT_RAIN
@@ -839,7 +846,7 @@ PLUGIN_WEATHERTIME_PM_LIGHT_RAIN
 	FR	Pluie Légère PM
 	DE	Nachm. etwas Regen
 	NL	Midd. enige regen
-	SE	Em. lätt regn
+	SV	EM Lätt Regn
 	DA	Em. let regn
 
 PLUGIN_WEATHERTIME_LIGHT_RAIN_LATE
@@ -847,7 +854,7 @@ PLUGIN_WEATHERTIME_LIGHT_RAIN_LATE
 	FR	Pluie Légère Tard
 	DE	Abends etwas Regen
 	NL	Avond enige regen
-	SE	Em. lätt regn
+	SV	Sent: Lätt Regn
 	DA	Em. let regn
 
 PLUGIN_WEATHERTIME_RAIN_LATE
@@ -855,7 +862,7 @@ PLUGIN_WEATHERTIME_RAIN_LATE
 	FR	Pluie Tard
 	DE	Abends Regen
 	NL	Avond regen
-	SE	Em. regn
+	SV	Sent: Rregn
 	DA	Em. regn
 
 PLUGIN_WEATHERTIME_PM_RAIN
@@ -863,7 +870,7 @@ PLUGIN_WEATHERTIME_PM_RAIN
 	FR	Pluie PM
 	DE	Nachm. Regen
 	NL	Midd. regen
-	SE	Em. regn
+	SV	EM Regn
 	DA	Em. regn
 
 PLUGIN_WEATHERTIME_SNOW_SHOWERS
@@ -871,7 +878,7 @@ PLUGIN_WEATHERTIME_SNOW_SHOWERS
 	FR	Averses de Neige
 	DE	Schneeschauer
 	NL	Sneeuwbuien
-	SE	Enstaka snöfall
+	SV	Snöbyar
 	DA	Snebyger
 
 PLUGIN_WEATHERTIME_SNOW_SHOWER
@@ -879,7 +886,7 @@ PLUGIN_WEATHERTIME_SNOW_SHOWER
 	FR	Averse de Neige
 	DE	Schneeschauer
 	NL	Sneeuwbui
-	SE	Enstaka snöfall
+	SV	Snöbyar
 	DA	Snebyger
 
 PLUGIN_WEATHERTIME_RAIN_TO_SNOW
@@ -887,7 +894,7 @@ PLUGIN_WEATHERTIME_RAIN_TO_SNOW
 	FR	Pluie à Neige
 	DE	Regen in Schnee überg.
 	NL	Regen tot sneeuw
-	SE	Snöblandat regn
+	SV	Snöblandat Regn
 	DA	Regn måske sne
 
 PLUGIN_WEATHERTIME_PM_RAIN_SNOW
@@ -895,7 +902,7 @@ PLUGIN_WEATHERTIME_PM_RAIN_SNOW
 	FR	Pluie/Neige PM
 	DE	Nachm. Regen/Schnee
 	NL	Midd. regen/sneeuw
-	SE	Em. regn/snö
+	SV	EM Regn/Snö
 	DA	Em. regn/sne
 
 PLUGIN_WEATHERTIME_FEW_SHOWERS_WIND
@@ -903,7 +910,7 @@ PLUGIN_WEATHERTIME_FEW_SHOWERS_WIND
 	FR	Quelques Averses/Vent
 	DE	Wenige Schauer/Wind
 	NL	Enkele buien/winderig
-	SE	Enstaka skurar/blåst
+	SV	Enstaka Skurar/Vind
 	DA	Enkelte byger/blæst
 
 PLUGIN_WEATHERTIME_SNOW_WIND
@@ -911,7 +918,7 @@ PLUGIN_WEATHERTIME_SNOW_WIND
 	FR	Neige/Vent
 	DE	Schnee/Wind
 	NL	Sneeuw/winderig
-	SE	Snö/blåst
+	SV	Snö/Vind
 	DA	Sne/Blæst
 
 PLUGIN_WEATHERTIME_PM_RAIN_SNOW_SHOWERS
@@ -919,7 +926,7 @@ PLUGIN_WEATHERTIME_PM_RAIN_SNOW_SHOWERS
 	FR	Averses de Pluie/Neige PM
 	DE	Nachm. Regen/Schneeschauer
 	NL	Midd. regen/sneeuwbuien
-	SE	Em. skurar regn/snö
+	SV	EM Regn/Snöbyar
 	DA	Em. Regn/Snebyger
 
 PLUGIN_WEATHERTIME_PM_RAIN_SNOW_WIND
@@ -927,7 +934,7 @@ PLUGIN_WEATHERTIME_PM_RAIN_SNOW_WIND
 	FR	Pluie/Neige/Vent PM
 	DE	Nachm. Regen/Schnee/Wind
 	NL	Midd. regen/sneeuw/winderig
-	SE	Em. regn/snö/blåst
+	SV	Em Regn/Snö/Vind
 	DA	Em. Regn/Sne/Blæst
 
 PLUGIN_WEATHERTIME_RAIN_SNOW_SHOWERS_WIND
@@ -935,7 +942,7 @@ PLUGIN_WEATHERTIME_RAIN_SNOW_SHOWERS_WIND
 	FR	Pluie/Averses de Neige/Vent
 	DE	Regen/Schneeschauer/Wind
 	NL	Regen/sneeuwbuien/winderig
-	SE	Regn/snöbyar/blåst
+	SV	Regn/Snöbyar/Vind
 	DA	Regn/Snebyger/Blæst
 
 PLUGIN_WEATHERTIME_SNOW_SHOWER_WIND
@@ -943,13 +950,14 @@ PLUGIN_WEATHERTIME_SNOW_SHOWER_WIND
 	DA	Snebyger/Blæst
 	DE	Schneeschauer/Wind
 	NL	Sneeuwbuien/Wind
+	SV	Snöbyar/Vind
 
 PLUGIN_WEATHERTIME_RAIN_SNOW_WIND
 	EN	Rain/Snow/Wind
 	FR	Pluie/Neige/Vent
 	DE	Regen/Schnee/Wind
 	NL	Regen/sneeuw/winderig
-	SE	Regn/Snö/Blåst
+	SV	Regn/Snö/Vind
 	DA	Regn/Sne/Blæst
 
 PLUGIN_WEATHERTIME_LIGHT_SNOW
@@ -957,7 +965,7 @@ PLUGIN_WEATHERTIME_LIGHT_SNOW
 	FR	Neige Légère
 	DE	Etwas Schnee
 	NL	Lichte sneeuw
-	SE	Lätt snö
+	SV	Lätt snöfall
 	DA	Let sne
 
 PLUGIN_WEATHERTIME_PM_SNOW
@@ -965,7 +973,7 @@ PLUGIN_WEATHERTIME_PM_SNOW
 	FR	Neige PM
 	DE	Nachm. Schnee
 	NL	Midd. sneeuw
-	SE	Em. snö
+	SV	EM Snöfall
 	DA	Em. sne
 
 PLUGIN_WEATHERTIME_FEW_SNOW_SHOWERS_WIND
@@ -973,7 +981,7 @@ PLUGIN_WEATHERTIME_FEW_SNOW_SHOWERS_WIND
 	FR	Quelques Averses de Neige/Vent
 	DE	Wenige Schneeschauer/Wind
 	NL	Enkele sneeuwbuien/winderig
-	SE	Spridda snöbyar/blåst
+	SV	Enstaka snöbyar/Vind
 	DA	Få snebyger/blæst
 
 PLUGIN_WEATHERTIME_LIGHT_SNOW_WIND
@@ -981,7 +989,7 @@ PLUGIN_WEATHERTIME_LIGHT_SNOW_WIND
 	FR	Neige/Vent Léger
 	DE	Etwas Schnee/Wind
 	NL	Lichte sneeuw/winderig
-	SE	Lätt snö/blåst
+	SV	Lätt snöfall/Vind
 	DA	Let sne/blæst
 
 PLUGIN_WEATHERTIME_WINTRY_MIX
@@ -989,7 +997,7 @@ PLUGIN_WEATHERTIME_WINTRY_MIX
 	FR	Mélange Hivernal
 	DE	Winter-Mix
 	NL	Winters
-	SE	Vinterväder
+	SV	Vinterväder
 	DA	Vintervejr
 
 PLUGIN_WEATHERTIME_AM_WINTRY_MIX
@@ -997,14 +1005,14 @@ PLUGIN_WEATHERTIME_AM_WINTRY_MIX
 	FR	Mélange Hivernal AM
 	DE	Vorm. Winter-Mix
 	NL	Ocht. winters
-	SE	Vinterväder
+	SV	FM Vinterväder
 
 PLUGIN_WEATHERTIME_HVY_RAIN_FREEZING_RAIN
 	EN	Hvy Rain/Freezing Rain
 	FR	Pluie Forte/Verglaçante
 	DE	heftiger/gefr. Regen
 	NL	Zware ijzel
-	SE	Underkylt regn
+	SV	Starkt Regn/Underkylt Regn
 	DA	Hård/Frysende regn
 
 PLUGIN_WEATHERTIME_AM_LIGHT_SNOW
@@ -1012,7 +1020,7 @@ PLUGIN_WEATHERTIME_AM_LIGHT_SNOW
 	FR	Neige Légère AM
 	DE	Vorm. etwas Schnee
 	NL	Ocht. enige sneeuw
-	SE	Tidigt lätt snöfall
+	SV	FM Lätt Snöfall
 	DA	Fm. let sne
 
 PLUGIN_WEATHERTIME_RAIN_FREEZING_RAIN
@@ -1020,7 +1028,7 @@ PLUGIN_WEATHERTIME_RAIN_FREEZING_RAIN
 	FR	Pluie/Pluie Verglaçante
 	DE	Regen/gefr. Regen
 	NL	Regen/ijzel
-	SE	Regn/underkylt regn
+	SV	Regn/Underkylt Regn
 	DA	Regn/Frysende regn
 
 PLUGIN_WEATHERTIME_T-STORMS_WIND
@@ -1028,7 +1036,7 @@ PLUGIN_WEATHERTIME_T-STORMS_WIND
 	FR	Orages/Vent
 	DE	Gewitter/Wind
 	NL	Onweer/winderig
-	SE	Åskväder/blåst
+	SV	Åska/Vind
 	DA	Torden/Blæst
 
 PLUGIN_WEATHERTIME_SPRINKLES
@@ -1036,7 +1044,7 @@ PLUGIN_WEATHERTIME_SPRINKLES
 	FR	Quelques Gouttes
 	DE	Graupel
 	NL	Motregen
-	SE	Strilregn
+	SV	Strillande Regn
 	DA	Silende regn
 
 PLUGIN_WEATHERTIME_AM_SNOW_SHOWERS
@@ -1044,7 +1052,7 @@ PLUGIN_WEATHERTIME_AM_SNOW_SHOWERS
 	FR	Averses de Neige AM
 	DE	Vorm. Schneeschauer
 	NL	Ocht. sneeuwbuien
-	SE	Fm. snöfall
+	SV	FM Snöfall
 	DA	Fm. snebyger
 
 PLUGIN_WEATHERTIME_SNOW_SHOWERS_EARLY
@@ -1052,7 +1060,7 @@ PLUGIN_WEATHERTIME_SNOW_SHOWERS_EARLY
 	FR	Averses de Neige Tôt
 	DE	Anfangs Schneeschauer
 	NL	Vroeg sneeuwbuien
-	SE	Fm. snöfall
+	SV	Tidigt: Snöbyar
 	DA	Fm. snebyger
 
 PLUGIN_WEATHERTIME_AM_CLOUDS_PM_SUN_WIND
@@ -1060,7 +1068,7 @@ PLUGIN_WEATHERTIME_AM_CLOUDS_PM_SUN_WIND
 	FR	Nuages AM / Soleil/Vent PM
 	DE	Vorm. Wolken/Nachm. Sonne/Wind
 	NL	Bewolkt later zon/winderig
-	SE	Fm. mulet em. soligt/blåst
+	SV	FM Molnigt / EM Sol/Vind
 	DA	Fm.skyet/em.sol/blæst
 
 PLUGIN_WEATHERTIME_AM_RAIN_SNOW_WIND
@@ -1068,7 +1076,7 @@ PLUGIN_WEATHERTIME_AM_RAIN_SNOW_WIND
 	FR	Pluie/Neige/Vent AM
 	DE	Vorm. Regen/Schnee/Wind
 	NL	Ocht. regen/sneeuw/winderig
-	SE	Fm. regn/snö/blåst
+	SV	FM Regn/Snö/Vind
 	DA	Fm. regn/sne/blæst
 
 PLUGIN_WEATHERTIME_RAIN_TO_SNOW_WIND
@@ -1076,7 +1084,7 @@ PLUGIN_WEATHERTIME_RAIN_TO_SNOW_WIND
 	FR	Pluie à Neige/Vent
 	DE	Regen in Schnee überg./Wind
 	NL	Regen tot sneeuw/winderig
-	SE	Regn till snö/blåst
+	SV	Regn eller Snö/Vind
 	DA	Regn eller sne/blæst
 
 PLUGIN_WEATHERTIME_SNOW_TO_WINTRY_MIX
@@ -1084,7 +1092,7 @@ PLUGIN_WEATHERTIME_SNOW_TO_WINTRY_MIX
 	FR	Neige à Mélange Hivernal
 	DE	Schnee in Winter-Mix überg.
 	NL	Sneeuw tot winters
-	SE	Snö/vinterväder
+	SV	Snöfall eller Vinterväder
 	DA	Sne eller vintervejr
 
 PLUGIN_WEATHERTIME_PM_SNOW_SHOWERS_WIND
@@ -1092,7 +1100,7 @@ PLUGIN_WEATHERTIME_PM_SNOW_SHOWERS_WIND
 	FR	Averses de Neige/Vent PM
 	DE	Nachm. Schneeschauer/Wind
 	NL	Midd. sneeuwbuien/winderig
-	SE	Fm. snöbyar
+	SV	FM Snöfall/Vind
 	DA	Fm. snebyger/blæst
 
 PLUGIN_WEATHERTIME_SNOW_AND_ICE_TO_RAIN
@@ -1100,7 +1108,7 @@ PLUGIN_WEATHERTIME_SNOW_AND_ICE_TO_RAIN
 	FR	Neige et Glace à Pluie
 	DE	Schnee und Hagel in Regen überg.
 	NL	Sneeuw/hagel tot regen
-	SE	Snö till regn
+	SV	Snö eller Regn
 	DA	Sne og Hagl eller regn
 
 PLUGIN_WEATHERTIME_HEAVY_RAIN
@@ -1108,7 +1116,7 @@ PLUGIN_WEATHERTIME_HEAVY_RAIN
 	FR	Pluie Forte
 	DE	Heftiger Regen
 	NL	Zware buien
-	SE	Regn
+	SV	Starkt Regn
 	DA	Hård regn
 
 PLUGIN_WEATHERTIME_AM_RAIN_ICE
@@ -1116,7 +1124,7 @@ PLUGIN_WEATHERTIME_AM_RAIN_ICE
 	FR	Pluie/Glace AM
 	DE	Vorm. Regen/Hagel
 	NL	Ocht. regen/hagel
-	SE	Fm. regn/hagel
+	SV	FM Regn/Hagel
 	DA	Fm. regn/hagl
 
 PLUGIN_WEATHERTIME_AM_SNOW_SHOWERS_WIND
@@ -1124,15 +1132,15 @@ PLUGIN_WEATHERTIME_AM_SNOW_SHOWERS_WIND
 	FR	Averses de Neige/Vent AM
 	DE	Vorm. Schneeschauer/Wind
 	NL	Ocht. sneeuwbuien/winderig
-	SE	Fm. regnbyar
+	SV	FM Snöfall/Vind
 	DA	Fm. snebyger/blæst
 
-PLUGIN_WEATHERTIME_AM_LIGH_SNOW_WIND
+PLUGIN_WEATHERTIME_AM_LIGHT_SNOW_WIND
 	EN	AM Light Snow/Wind
 	FR	Neige Légère/Vent AM
 	DE	Vorm. etwas Schnee/Wind
 	NL	Ocht. lichte sneeuw/winderig
-	SE	Fm. lätt snöfall
+	SV	FM Lätt Snöfall/Vind
 	DA	Fm. let sne/blæst
 
 PLUGIN_WEATHERTIME_PM_LIGHT_RAIN_WIND
@@ -1140,7 +1148,7 @@ PLUGIN_WEATHERTIME_PM_LIGHT_RAIN_WIND
 	FR	Pluie Légère/Vent PM
 	DE	Nachm. etwas Regen/Wind
 	NL	Midd. lichte regen/winderig
-	SE	Em. lätt regn/blåst
+	SV	EM Lätt Regn/Vind
 	DA	Em. let regn/blæst
 
 PLUGIN_WEATHERTIME_AM_LIGHT_WINTRY_MIX
@@ -1148,7 +1156,7 @@ PLUGIN_WEATHERTIME_AM_LIGHT_WINTRY_MIX
 	FR	Mélange Hivernal Léger AM
 	DE	Vorm. leichter Winter-Mix
 	NL	Ocht. lichte winters
-	SE	Vinterväder
+	SV	FM Lätt Vinterväder
 	DA	Fm. let vintervejr
 
 PLUGIN_WEATHERTIME_PM_LIGHT_SNOW_WIND
@@ -1156,7 +1164,7 @@ PLUGIN_WEATHERTIME_PM_LIGHT_SNOW_WIND
 	FR	Neige Légère/Vent PM
 	DE	Nachm. etwas Schnee/Wind
 	NL	Midd. lichte sneeuw/winderig
-	SE	Em. lätt snö/blåst
+	SV	EM Lätt Snöfall/Vind
 	DA	Em. let sne/blæst
 
 PLUGIN_WEATHERTIME_HEAVY_RAIN_WIND
@@ -1164,7 +1172,7 @@ PLUGIN_WEATHERTIME_HEAVY_RAIN_WIND
 	FR	Pluie/Vent Forts
 	DE	Heftiger Regen/Wind
 	NL	Zware regen/winderig
-	SE	Regn/blåst
+	SV	Regn/Vind
 	DA	Hård regn/blæst
 
 PLUGIN_WEATHERTIME_PM_SNOW_SHOWER
@@ -1172,7 +1180,7 @@ PLUGIN_WEATHERTIME_PM_SNOW_SHOWER
 	FR	Averse de Neige PM
 	DE	Nachm. Schneeschauer
 	NL	midd. sneeuwbui
-	SE	Em. snöfall
+	SV	EM Snöfall
 	DA	Em. snebyger
 
 PLUGIN_WEATHERTIME_PM_SNOW_SHOWERS
@@ -1180,7 +1188,7 @@ PLUGIN_WEATHERTIME_PM_SNOW_SHOWERS
 	FR	Averses de Neige PM
 	DE	Nachm. Schneeschauer
 	NL	Midd. sneeuwbuien
-	SE	Em. snöfall
+	SV	EM Snöfall
 	DA	Em. snebyger
 
 PLUGIN_WEATHERTIME_SNOW_SHOWERS_LATE
@@ -1188,7 +1196,7 @@ PLUGIN_WEATHERTIME_SNOW_SHOWERS_LATE
 	FR	Averses de Neige Tard
 	DE	Abends Schneeschauer
 	NL	Avond sneeuwbui
-	SE	Em. snöfall
+	SV	Sent: Snöbyar
 	DA	Em. snebyger
 
 PLUGIN_WEATHERTIME_RAIN_SNOW_SHOWERS_LATE
@@ -1196,7 +1204,7 @@ PLUGIN_WEATHERTIME_RAIN_SNOW_SHOWERS_LATE
 	FR	Pluie / Averses de Neige Tard
 	DE	Regen / Abends Schneeschauer
 	NL	Regen later sneeuwbuien
-	SE	Em. regn/snö
+	SV	Sent: Regn/Snöbyar
 	DA	Em. regn/sne-byger
 
 PLUGIN_WEATHERTIME_SNOW_TO_RAIN_WIND
@@ -1204,7 +1212,7 @@ PLUGIN_WEATHERTIME_SNOW_TO_RAIN_WIND
 	FR	Neige à Pluie/Vent
 	DE	Schnee in Regen überg./Wind
 	NL	Sneeuw tot regen/winderig
-	SE	Snö till regn/blåst
+	SV	Snö eller Regn/Vind
 	DA	Sne eller regn/blæst
 
 PLUGIN_WEATHERTIME_PM_LIGHT_RAIN_ICE
@@ -1212,7 +1220,7 @@ PLUGIN_WEATHERTIME_PM_LIGHT_RAIN_ICE
 	FR	Pluie/Glace Léger PM
 	DE	Nachm. leichter Regen/Hagel
 	NL	Midd. lichte regen/hagel
-	SE	Em. lätt regn
+	SV	EM Lätt Regn/Hagel
 	DA	Em. let regn/hagl
 
 PLUGIN_WEATHERTIME_SNOW
@@ -1220,7 +1228,7 @@ PLUGIN_WEATHERTIME_SNOW
 	FR	Neige
 	DE	Schnee
 	NL	Sneeuw
-	SE	Snö
+	SV	Snöfall
 	DA	Sne
 
 PLUGIN_WEATHERTIME_AM_SNOW
@@ -1228,7 +1236,7 @@ PLUGIN_WEATHERTIME_AM_SNOW
 	FR	Neige AM
 	DE	Vorm. Schnee
 	NL	Ocht. sneeuw
-	SE	Fm. snö
+	SV	FM Snöfall
 	DA	Fm. sne
 
 PLUGIN_WEATHERTIME_SNOW_TO_ICE
@@ -1236,7 +1244,7 @@ PLUGIN_WEATHERTIME_SNOW_TO_ICE
 	FR	Neige à Glace
 	DE	Schnee in Hagel überg.
 	NL	Sneeuw tot hagel
-	SE	Snö til hagel
+	SV	Snö eller Hagel
 	DA	Sne eller hagl
 
 PLUGIN_WEATHERTIME_WINTRY_MIX_WIND
@@ -1244,7 +1252,7 @@ PLUGIN_WEATHERTIME_WINTRY_MIX_WIND
 	FR	Mélange Hivernal/Vent
 	DE	Winter-Mix/Wind
 	NL	Winters/winderig
-	SE	Vinterväder/blåst
+	SV	Vinterväder/Vind
 	DA	Vintervejr/blæst
 
 PLUGIN_WEATHERTIME_PM_LIGHT_SNOW
@@ -1252,7 +1260,7 @@ PLUGIN_WEATHERTIME_PM_LIGHT_SNOW
 	FR	Neige Légère PM
 	DE	Nachm. etwas Schnee
 	NL	Midd. enige sneeuw
-	SE	Em. lätt snö
+	SV	EM Lätt Snöfall
 	DA	Em. let sne
 
 PLUGIN_WEATHERTIME_AM_DRIZZLE
@@ -1260,7 +1268,7 @@ PLUGIN_WEATHERTIME_AM_DRIZZLE
 	FR	Bruine AM
 	DE	Vorm. Nieselregen
 	NL	Ocht. motregen
-	SE	Fm. duggregn
+	SV	FM Duggregn
 	DA	Fm. småregn
 
 PLUGIN_WEATHERTIME_STRONG_STORMS_WIND
@@ -1268,7 +1276,7 @@ PLUGIN_WEATHERTIME_STRONG_STORMS_WIND
 	FR	Fortes Tempêtes/Vent
 	DE	Starke Stürme/Wind
 	NL	Zware storm/winderig
-	SE	Stormbyar
+	SV	Starka Storm Vindar
 	DA	Hård storm
 
 PLUGIN_WEATHERTIME_PM_DRIZZLE
@@ -1276,7 +1284,7 @@ PLUGIN_WEATHERTIME_PM_DRIZZLE
 	FR	Bruine PM
 	DE	Nachm. Nieselregen
 	NL	Middag motregen
-	SE	Em. duggregn
+	SV	EM Duggregn
 	DA	Em. smÅregn
 
 PLUGIN_WEATHERTIME_DRIZZLE
@@ -1284,7 +1292,7 @@ PLUGIN_WEATHERTIME_DRIZZLE
 	FR	Bruine
 	DE	Nieselregen
 	NL	Motregen
-	SE	Smågregn
+	SV	Duggregn
 	DA	småregn
 
 PLUGIN_WEATHERTIME_AM_LIGHT_RAIN_WIND
@@ -1292,7 +1300,7 @@ PLUGIN_WEATHERTIME_AM_LIGHT_RAIN_WIND
 	FR	Pluie/Vent Légers AM
 	DE	Vorm. etwas Regen/Wind
 	NL	Ocht. lichte regen/winderig
-	SE	Fm. lätt regn
+	SV	FM Lätt Regn/Vind
 	DA	Fm. let Regn/Blæst
 
 PLUGIN_WEATHERTIME_AM_RAIN_WIND
@@ -1300,7 +1308,7 @@ PLUGIN_WEATHERTIME_AM_RAIN_WIND
 	FR	Pluie/vent AM
 	DE	Vorm. Regen/Wind
 	NL	Ocht. regen/winderig
-	SE	Fm. regn/blåst
+	SV	FM Regn/Vind
 	DA	Fm. Regn/Blæst
 
 PLUGIN_WEATHERTIME_WINTRY_MIX_TO_SNOW
@@ -1308,7 +1316,7 @@ PLUGIN_WEATHERTIME_WINTRY_MIX_TO_SNOW
 	FR	Mélange Hivernal à Neige
 	DE	Winter-Mix in Schnee überg.
 	NL	Winters tot sneeuw
-	SE	Vinterväder / snö
+	SV	Vinterväder ev. Snö
 	DA	Vintervejr måske sne
 
 PLUGIN_WEATHERTIME_SNOW_SHOWERS_WINDY
@@ -1316,7 +1324,7 @@ PLUGIN_WEATHERTIME_SNOW_SHOWERS_WINDY
 	FR	Averses de Neige/Venteux
 	DE	Schneeschauer/Wind
 	NL	Sneeuwbuien/winderig
-	SE	Snöfall/blåst
+	SV	Snöfall/Vind
 	DA	Snebyger/Blæst
 
 PLUGIN_WEATHERTIME_LIGHT_RAIN_SHOWER
@@ -1324,7 +1332,7 @@ PLUGIN_WEATHERTIME_LIGHT_RAIN_SHOWER
 	FR	Averse de Pluie Légère
 	DE	Leichte Regenschauer
 	NL	Lichte regenbui
-	SE	Lätta regnskurar
+	SV	Lätta Regnskurar
 	DA	Lette regnbyger
 
 PLUGIN_WEATHERTIME_LIGHT_RAIN_WITH_THUNDER
@@ -1332,7 +1340,7 @@ PLUGIN_WEATHERTIME_LIGHT_RAIN_WITH_THUNDER
 	FR	Pluie Légère avec Tonerre
 	DE	Etwas Regen mit Gewitter
 	NL	Lichte regen met onweer
-	SE	Lätt regn med åska
+	SV	Lätt Regn med Åska
 	DA	Let regn med torden
 
 PLUGIN_WEATHERTIME_LIGHT_DRIZZLE
@@ -1340,7 +1348,7 @@ PLUGIN_WEATHERTIME_LIGHT_DRIZZLE
 	FR	Bruine Légère
 	DE	Leichter Nieselregen
 	NL	Lichte motregen
-	SE	Lätt duggregn
+	SV	Lätt Duggregn
 	DA	Let småregn
 
 PLUGIN_WEATHERTIME_DRIZZLE_LATE
@@ -1348,13 +1356,14 @@ PLUGIN_WEATHERTIME_DRIZZLE_LATE
 	FR	Bruine tard
 	DA	Småregn sent
 	NL	Later motregen
+	SV	Sent: Duggregn
 
 PLUGIN_WEATHERTIME_MIST
 	EN	Mist
 	FR	Brume
 	DE	Nebel
 	NL	Mist
-	SE	Dimma
+	SV	Dimma
 	DA	Tåget
 
 PLUGIN_WEATHERTIME_SMOKE
@@ -1362,7 +1371,7 @@ PLUGIN_WEATHERTIME_SMOKE
 	FR	Fumée
 	DE	Rauch
 	NL	Smoke
-	SE	Rök
+	SV	Rök
 	DA	Smog
 
 PLUGIN_WEATHERTIME_HAZE
@@ -1370,7 +1379,7 @@ PLUGIN_WEATHERTIME_HAZE
 	FR	Brume
 	DE	Dunst
 	NL	Heiig
-	SE	Dis
+	SV	Dis
 	DA	Hagl
 
 PLUGIN_WEATHERTIME_LIGHT_SNOW_SHOWER
@@ -1378,7 +1387,7 @@ PLUGIN_WEATHERTIME_LIGHT_SNOW_SHOWER
 	FR	Averse de Neige Légère
 	DE	Leichte Schneeschauer
 	NL	Lichte sneeuwbui
-	SE	Lätt snöfall
+	SV	Lätt Snöfall
 	DA	Let sne
 
 PLUGIN_WEATHERTIME_LIGHT_SNOW_SHOWER_WINDY
@@ -1386,7 +1395,7 @@ PLUGIN_WEATHERTIME_LIGHT_SNOW_SHOWER_WINDY
 	FR	Averse de Neige Légère/ Venteux
 	DE	Leichte Schneeschauer/Wind
 	NL	Lichte sneeuwbui/winderig
-	SE	Lätt snöfall / blåst
+	SV	Lätt Snöfall/Vind
 	DA	Let sne/blæst
 
 PLUGIN_WEATHERTIME_CLEAR
@@ -1394,7 +1403,7 @@ PLUGIN_WEATHERTIME_CLEAR
 	FR	Dégagé
 	DE	Klar
 	NL	Helder
-	SE	Klart
+	SV	Klart
 	DA	Klart
 
 PLUGIN_WEATHERTIME_MOSTLY_CLEAR
@@ -1402,7 +1411,7 @@ PLUGIN_WEATHERTIME_MOSTLY_CLEAR
 	FR	Plutôt Dégagé
 	DE	Meist klar
 	NL	Meestal helder
-	SE	Mestadels klart
+	SV	Mestadels Klart
 	DA	Mest klart
 
 PLUGIN_WEATHERTIME_A_FEW_CLOUDS
@@ -1410,7 +1419,7 @@ PLUGIN_WEATHERTIME_A_FEW_CLOUDS
 	FR	Quelques Nuages
 	DE	Wenige Wolken
 	NL	Enkele wolken
-	SE	enstaka moln
+	SV	Enstaka Moln
 	DA	Enkelte skyer
 
 PLUGIN_WEATHERTIME_FAIR
@@ -1418,7 +1427,7 @@ PLUGIN_WEATHERTIME_FAIR
 	FR	Agréable
 	DE	Freundlich
 	NL	Redelijk
-	SE	Klart
+	SV	Klart
 	DA	Klart
 
 PLUGIN_WEATHERTIME_PM_T-SHOWERS
@@ -1426,7 +1435,7 @@ PLUGIN_WEATHERTIME_PM_T-SHOWERS
 	FR	Orages PM
 	DE	Nachm. gewittrige Schauer
 	NL	Midd. onweersbui
-	SE	Em. skurar med åska
+	SV	EM Åska
 	DA	Em. Tordenbyger
 
 PLUGIN_WEATHERTIME_T-SHOWERS
@@ -1434,7 +1443,7 @@ PLUGIN_WEATHERTIME_T-SHOWERS
 	FR	Orages
 	DE	Gewittrige Schauer
 	NL	Onweersbui
-	SE	Åskskurar
+	SV	Åska
 	DA	Tordenbyger
 
 PLUGIN_WEATHERTIME_T-SHOWERS_WIND
@@ -1442,7 +1451,7 @@ PLUGIN_WEATHERTIME_T-SHOWERS_WIND
 	FR	Orages / Vent
 	DE	Gewittrige Schauer/Wind
 	NL	Onweersbui/winderig
-	SE	Åskskurar
+	SV	Åska/Vind
 	DA	Tordenbyger/Blæst
 
 PLUGIN_WEATHERTIME_T-STORMS_EARLY
@@ -1450,7 +1459,7 @@ PLUGIN_WEATHERTIME_T-STORMS_EARLY
 	FR	Orages en matinée
 	DE	Anfangs Gewitter
 	NL	Vroeg onweer
-	SE	Tidiga åskskurar
+	SV	Tidigt: Åska
 	DA	Tidlig tordenbyger
 
 PLUGIN_WEATHERTIME_LIGHT_RAIN_EARLY
@@ -1458,7 +1467,7 @@ PLUGIN_WEATHERTIME_LIGHT_RAIN_EARLY
 	FR	Pluie légère en matinée
 	DE	Anfangs leichter Regen
 	NL	Vroeg lichte buien
-	SE	Fm. duggregn
+	SV	Tidigt: Lätt regn
 	DA	Fm. let regn
 
 PLUGIN_WEATHERTIME_SUNNY_WIND
@@ -1466,7 +1475,7 @@ PLUGIN_WEATHERTIME_SUNNY_WIND
 	FR	Ensoleillé/Venteux
 	DE	Sonnig/Wind
 	NL	Zonnig/winderig
-	SE	Soligt/blåst
+	SV	Sol/Vind
 	DA	Solrigt/Blæsende
 
 PLUGIN_WEATHERTIME_FOGGY
@@ -1474,7 +1483,7 @@ PLUGIN_WEATHERTIME_FOGGY
 	FR	Brumeux
 	DE	Nebelig
 	NL	Mistig
-	SE	Dimma
+	SV	Dimma
 	DA	Tåge
 
 PLUGIN_WEATHERTIME_PM_FOG
@@ -1482,31 +1491,33 @@ PLUGIN_WEATHERTIME_PM_FOG
 	FR	Brumeux après-midi
 	DE	nachmittags Nebel
 	NL	Na de middag mist
-	SE	Em. dimma
 	DA	Em. Tåge
+	SV	EM Dimma
 
 PLUGIN_WEATHERTIME_AM_FOG_PM_SUN
 	EN	AM Fog / PM Sun
 	FR	AM Brume / PM Soleil
 	DE	Vorm. Nebel/nachm. Sonne
 	NL	Ocht. mist/midd. zon
-	SE	Fm. dimma em. sol
+	SV	Fm. dimma em. sol
 	DA	Fm. Tåge/em. Sol
+	SV	FM Dimma / EM Sol
 
 PLUGIN_WEATHERTIME_DRIZZLE_FOG
 	EN	Drizzle/Fog
 	FR	Bruine/Brume
 	DE	Nieselregen/Nebel
 	NL	Motregen / mist
-	SE	Duggregn / dimma
+	SV	Duggregn / dimma
 	DA	Let småregn/Tåge
+	SV	Duggregn/Dimma
 
 PLUGIN_WEATHERTIME_LIGHT_RAIN_FOG
 	EN	Light Rain/Fog
 	FR	Pluie Légère/Brume
 	DE	Leichter Regen/Nebel
 	NL	Lichte regen / mist
-	SE	Duggregn / dimma
+	SV	Lätt Regn/Dimma
 	DA	Let regn/tåge
 
 PLUGIN_WEATHERTIME_AM_FOG_PM_CLOUDS
@@ -1515,6 +1526,7 @@ PLUGIN_WEATHERTIME_AM_FOG_PM_CLOUDS
 	DE	Vorm. Nebel/nachm. Wolken
 	NL	Ocht. mistig / midd. bewolkt
 	DA	Fm. Tåge/em. Skyet
+	SV	FM Dimma / EM Moln
 
 PLUGIN_WEATHERTIME_WIND_0
 	EN	m/s
@@ -1522,6 +1534,7 @@ PLUGIN_WEATHERTIME_WIND_0
 	DE	m/s
 	NL	m/s
 	DA	m/s
+	SV	m/s
 
 PLUGIN_WEATHERTIME_WIND_1
 	EN	km/h
@@ -1529,6 +1542,7 @@ PLUGIN_WEATHERTIME_WIND_1
 	DE	km/h
 	NL	km/h
 	DA	km/t
+	SV	km/t
 
 PLUGIN_WEATHERTIME_WIND_2
 	EN	mph
@@ -1536,6 +1550,7 @@ PLUGIN_WEATHERTIME_WIND_2
 	DE	mi/h
 	NL	ml/h
 	DA	m/t
+	SV	mph
 
 PLUGIN_WEATHERTIME_WIND_NORTH
 	EN	N
@@ -1543,6 +1558,7 @@ PLUGIN_WEATHERTIME_WIND_NORTH
 	DE	N
 	NL	N
 	DA	N
+	SV	N
 
 PLUGIN_WEATHERTIME_WIND_N
 	EN	N
@@ -1550,6 +1566,7 @@ PLUGIN_WEATHERTIME_WIND_N
 	DE	N
 	NL	N
 	DA	N
+	SV	N
 
 PLUGIN_WEATHERTIME_WIND_NNE
 	EN	NNE
@@ -1557,6 +1574,7 @@ PLUGIN_WEATHERTIME_WIND_NNE
 	DE	NNO
 	NL	NNO
 	DA	NNØ
+	SV	NNÖ
 
 PLUGIN_WEATHERTIME_WIND_NE
 	EN	NE
@@ -1564,6 +1582,7 @@ PLUGIN_WEATHERTIME_WIND_NE
 	DE	NO
 	NL	NO
 	DA	NØ
+	SV	NÖ
 
 PLUGIN_WEATHERTIME_WIND_ENE
 	EN	ENE
@@ -1571,6 +1590,7 @@ PLUGIN_WEATHERTIME_WIND_ENE
 	DE	ONO
 	NL	ONO
 	DA	ØNØ
+	SV	ÖNÖ
 
 PLUGIN_WEATHERTIME_WIND_EAST
 	EN	E
@@ -1578,6 +1598,7 @@ PLUGIN_WEATHERTIME_WIND_EAST
 	DE	O
 	NL	O
 	DA	Ø
+	SV	Ö
 
 PLUGIN_WEATHERTIME_WIND_E
 	EN	E
@@ -1585,6 +1606,7 @@ PLUGIN_WEATHERTIME_WIND_E
 	DE	O
 	NL	O
 	DA	Ø
+	SV	Ö
 
 PLUGIN_WEATHERTIME_WIND_ESE
 	EN	ESE
@@ -1592,6 +1614,7 @@ PLUGIN_WEATHERTIME_WIND_ESE
 	DE	OSO
 	NL	OZO
 	DA	ØSØ
+	SV	ÖSÖ
 
 PLUGIN_WEATHERTIME_WIND_SE
 	EN	SE
@@ -1599,6 +1622,7 @@ PLUGIN_WEATHERTIME_WIND_SE
 	DE	SO
 	NL	ZO
 	DA	SØ
+	SV	SÖ
 
 PLUGIN_WEATHERTIME_WIND_SSE
 	EN	SSE
@@ -1606,6 +1630,7 @@ PLUGIN_WEATHERTIME_WIND_SSE
 	DE	SSO
 	NL	ZZO
 	DA	SSØ
+	SV	SSÖ
 
 PLUGIN_WEATHERTIME_WIND_SOUTH
 	EN	S
@@ -1613,6 +1638,7 @@ PLUGIN_WEATHERTIME_WIND_SOUTH
 	DE	S
 	NL	Z
 	DA	S
+	SV	S
 
 PLUGIN_WEATHERTIME_WIND_S
 	EN	S
@@ -1620,6 +1646,7 @@ PLUGIN_WEATHERTIME_WIND_S
 	DE	S
 	NL	Z
 	DA	S
+	SV	S
 
 PLUGIN_WEATHERTIME_WIND_SSW
 	EN	SSW
@@ -1627,6 +1654,7 @@ PLUGIN_WEATHERTIME_WIND_SSW
 	DE	SSW
 	NL	ZZW
 	DA	SSV
+	SV	SSV
 
 PLUGIN_WEATHERTIME_WIND_SW
 	EN	SW
@@ -1634,6 +1662,7 @@ PLUGIN_WEATHERTIME_WIND_SW
 	DE	SW
 	NL	ZW
 	DA	SV
+	SV	SV
 
 PLUGIN_WEATHERTIME_WIND_WSW
 	EN	WSW
@@ -1641,6 +1670,7 @@ PLUGIN_WEATHERTIME_WIND_WSW
 	DE	WSW
 	NL	WZW
 	DA	VSV
+	SV	VSV
 
 PLUGIN_WEATHERTIME_WIND_W
 	EN	W
@@ -1648,6 +1678,7 @@ PLUGIN_WEATHERTIME_WIND_W
 	DE	W
 	NL	W
 	DA	V
+	SV	V
 
 PLUGIN_WEATHERTIME_WIND_WEST
 	EN	W
@@ -1655,6 +1686,7 @@ PLUGIN_WEATHERTIME_WIND_WEST
 	DE	W
 	NL	W
 	DA	V
+	SV	V
 
 PLUGIN_WEATHERTIME_WIND_WNW
 	EN	WNW
@@ -1662,6 +1694,7 @@ PLUGIN_WEATHERTIME_WIND_WNW
 	DE	WNW
 	NL	WNW
 	DA	VNV
+	SV	VNV
 
 PLUGIN_WEATHERTIME_WIND_NW
 	EN	NW
@@ -1669,6 +1702,7 @@ PLUGIN_WEATHERTIME_WIND_NW
 	DE	NW
 	NL	NW
 	DA	NV
+	SV	NV
 
 PLUGIN_WEATHERTIME_WIND_NNW
 	EN	NNW
@@ -1676,13 +1710,15 @@ PLUGIN_WEATHERTIME_WIND_NNW
 	DE	NNW
 	NL	NNW
 	DA	NNV
+	SV	NNV
 
 PLUGIN_WEATHERTIME_WIND_ALL
 	EN	ALL
-	FR	NSEO
+	FR	NSVO
 	DE	NSOW
 	NL	VAR
 	DA	NSØV
+	SV	ALLA
 
 PLUGIN_WEATHERTIME_SUNRISE
 	EN	Sunrise
@@ -1690,6 +1726,7 @@ PLUGIN_WEATHERTIME_SUNRISE
 	DE	Sonnenaufgang
 	NL	Zonsopgang
 	DA	Solopgang
+	SV	Soluppgång
 
 PLUGIN_WEATHERTIME_SUNSET
 	EN	Sunset
@@ -1697,6 +1734,7 @@ PLUGIN_WEATHERTIME_SUNSET
 	DE	Sonnenuntergang
 	NL	Zonsondergang
 	DA	Solnedgang
+	SV	Solnedgång
 
 PLUGIN_WEATHERTIME_HUMID
 	EN	Humidity
@@ -1704,6 +1742,7 @@ PLUGIN_WEATHERTIME_HUMID
 	DE	Luftfeuchtigkeit
 	NL	Luchtvochtigheid
 	DA	Luftfugtighed
+	SV	Luftfuktighet
 
 PLUGIN_WEATHERTIME_WINDGUST
 	EN	Windgust
@@ -1711,6 +1750,7 @@ PLUGIN_WEATHERTIME_WINDGUST
 	DE	Böen
 	NL	Windgust
 	DA	Vindstød
+	SV	Vindbyar
 
 PLUGIN_WEATHERTIME_CURRENTBAR
 	EN	Pressure
@@ -1718,6 +1758,7 @@ PLUGIN_WEATHERTIME_CURRENTBAR
 	DE	Luftdruck
 	NL	Druk
 	DA	Tryk
+	SV	Tryck
 
 PLUGIN_WEATHERTIME_CURRENTBAR_FALLING
 	EN	Falling
@@ -1725,6 +1766,7 @@ PLUGIN_WEATHERTIME_CURRENTBAR_FALLING
 	DE	Fallend
 	NL	Vallend
 	DA	Faldende
+	SV	Fallande
 
 PLUGIN_WEATHERTIME_CURRENTBAR_RISING
 	EN	Rising
@@ -1732,6 +1774,7 @@ PLUGIN_WEATHERTIME_CURRENTBAR_RISING
 	DE	Steigend
 	NL	Stijgend
 	DA	Stigende
+	SV	Stigande
 
 PLUGIN_WEATHERTIME_CURRENTBAR_STEADY
 	EN	Steady
@@ -1739,6 +1782,7 @@ PLUGIN_WEATHERTIME_CURRENTBAR_STEADY
 	DE	Konstant
 	NL	Stabiel
 	DA	Stabilt
+	SV	Stabilt
 
 PLUGIN_WEATHERTIME_CURRENTBAR_N_A
 	EN	N/A
@@ -1746,12 +1790,14 @@ PLUGIN_WEATHERTIME_CURRENTBAR_N_A
 	DE	Unbekannt
 	NL	Onbekend
 	DA	Ukendt
+	SV	Okänt
 
 PLUGIN_WEATHERTIME_VISIBILITY
 	EN	Visibility
 	FR	Visibilité
 	NL	Zicht
 	DA	Sigtbarhed
+	SV	Sikt
 
 PLUGIN_WEATHERTIME_UVINDEX
 	EN	UV-index
@@ -1759,6 +1805,7 @@ PLUGIN_WEATHERTIME_UVINDEX
 	DE	UV-Index
 	NL	UV-index
 	DA	UV-index
+	SV	UV-index
 
 PLUGIN_WEATHERTIME_UVINDEX_
 	EN	Low
@@ -1766,6 +1813,7 @@ PLUGIN_WEATHERTIME_UVINDEX_
 	DE	Niedrig
 	NL	laag
 	DA	Lavt
+	SV	Lågt
 
 PLUGIN_WEATHERTIME_UVINDEX_LOW
 	EN	Low
@@ -1773,6 +1821,7 @@ PLUGIN_WEATHERTIME_UVINDEX_LOW
 	DE	Niedrig
 	NL	Laag
 	DA	Lavt
+	SV	Lågt
 
 PLUGIN_WEATHERTIME_MOON
 	EN	Moon
@@ -1780,6 +1829,7 @@ PLUGIN_WEATHERTIME_MOON
 	DE	Mond
 	NL	Maan
 	DA	Måne
+	SV	Måne
 
 PLUGIN_WEATHERTIME_MOON_NEW
 	EN	New
@@ -1787,6 +1837,7 @@ PLUGIN_WEATHERTIME_MOON_NEW
 	DE	Neu
 	NL	Nieuw
 	DA	Ny
+	SV	Ny
 
 PLUGIN_WEATHERTIME_MOON_FULL
 	EN	Full
@@ -1794,44 +1845,52 @@ PLUGIN_WEATHERTIME_MOON_FULL
 	DE	Voll
 	NL	Vol
 	DA	Fuld
+	SV	Full
 
 PLUGIN_WEATHERTIME_MOON_FIRST_QUARTER
 	EN	First quarter
 	FR	Premier quart
 	NL	Eerste kwart
 	DA	Tiltagende (halv)
+	SV	Första Kvarteret
 
 PLUGIN_WEATHERTIME_MOON_THIRD_QUARTER
 	EN	Third quarter
 	FR	Troisième quart
 	NL	Derde kwart
 	DA	Aftagende (halv)
+	SV	Tredje Kvarteret
 
 PLUGIN_WEATHERTIME_MOON_WAXING_GIBBOUS
 	EN	Waxing gibbous
 	FR	Lune montante
 	DA	Tiltagende (stor)
+	SV	Växande
 
 PLUGIN_WEATHERTIME_MOON_LAST_QUARTER
 	EN	Last quarter
 	FR	Dernier quart
 	NL	Laatste kwart
 	DA	Aftagende (lille)
+	SV	Sista Kvarteret
 
 PLUGIN_WEATHERTIME_MOON_WAXING_CRESCENT
 	EN	Waxing crescent
 	FR	Premier croissant
 	DA	Tiltagende (lille) 
+	SV	Ny
 
 PLUGIN_WEATHERTIME_MOON_WANING_GIBBOUS
 	EN	Waning gibbous
 	FR	Lune descendante
 	DA	Aftagende (stor)
+	SV	Avtagande
 
 PLUGIN_WEATHERTIME_MOON_WANING_CRESCENT
 	EN	Waning crescent
 	FR	Dernier croissant
 	DA	Aftagende (lille)
+	SV	Nedan
 
 PLUGIN_WEATHERTIME_FOG_LATE
 	EN	Fog Late
@@ -1839,6 +1898,7 @@ PLUGIN_WEATHERTIME_FOG_LATE
 	DE	Abends Nebel
 	NL	Avond mist
 	DA	Aften tåge
+	SV	Sent: Dimma
 
 PLUGIN_WEATHERTIME_FOGGY_WIND
 	EN	Foggy / Wind
@@ -1846,6 +1906,7 @@ PLUGIN_WEATHERTIME_FOGGY_WIND
 	DE	Neblig / Wind
 	NL	Mistig / wind
 	DA	Tåge / Blæst
+	SV	Dimma / Vind
 
 PLUGIN_WEATHERTIME_WIND_CALM
 	EN	Wind Calm
@@ -1853,6 +1914,7 @@ PLUGIN_WEATHERTIME_WIND_CALM
 	DE	Wind ruhig
 	NL	Wind kalm
 	DA	Let blæst
+	SV	Bris
 
 PLUGIN_WEATHERTIME_WIND_VAR
 	EN	Wind variable
@@ -1860,19 +1922,21 @@ PLUGIN_WEATHERTIME_WIND_VAR
 	DE	Wind variabel
 	NL	Wind variabel
 	DA	blæst skiftende
+	SV	Byig Vind
 
 PLUGIN_WEATHERTIME_CHANCE_OF_RAIN
 	EN	Chance of Rain
 	FR	Risque de Pluie
 	DE	Regen möglich
 	NL	Kans op regen
+	SV	Risk för Regn
 
 PLUGIN_WEATHERTIME_SCATTERED_CLOUDS
 	EN	Scattered Clouds
 	DE	Teils wolkig
 	FR	Partiellement nuageux
 	NL	Halfbewolkt
-	SE	Halvklart
+	SV	Halvklart
 	DA	Let skyet
 
 PLUGIN_WEATHERTIME_OVERCAST
@@ -1880,7 +1944,7 @@ PLUGIN_WEATHERTIME_OVERCAST
 	FR	Nuageux
 	DE	Bewölkt
 	NL	Bewolkt
-	SE	Mulet
+	SV	Mulet
 	DA	Skyet
 
 PLUGIN_WEATHERTIME_CHANCE_OF_SNOW
@@ -1888,18 +1952,21 @@ PLUGIN_WEATHERTIME_CHANCE_OF_SNOW
 	FR	Risque de Neige
 	DE	Schnee möglich
 	NL	Kans op sneeuw
+	SV	Risk för Snö
 
 PLUGIN_WEATHERTIME_CHANCE_OF_FREEZING_RAIN
 	EN	Chance of Freezing Rain
 	FR	Risque de Pluie verglaçante
 	DE	Eisregen möglich
 	NL	Kans op ijzel
+	SV	Risk för underkylt Regn
 
 PLUGIN_WEATHERTIME_CHANCE_OF_A_THUNDERSTORM
 	EN	Chance of Thunder
 	FR	Risque d'Orages
 	DE	Gewitter möglich
 	NL	Kans op onweer
+	SV	Risk för Åska
 
 PLUGIN_WEATHERTIME_ICE_PELLETS
 	EN	Ice Pellets
