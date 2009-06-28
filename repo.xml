@@ -13,8 +13,8 @@
       <changes lang="EN">Support for Squeezecenter 7.2/7.3</changes>
       <creator>Martin Rehfeld</creator>
       <email>martin.rehfeld@glnetworks.de</email>
-      <url>http://weathertime.googlecode.com/files/Plugins-WeatherTime-Plugin%20r161.zip</url>
-      <sha>98be0c18ce0058155d10584a7e7139065b7afdc1</sha>
+      <url>http://weathertime.googlecode.com/files/Plugins-WeatherTime-Plugin%20r163.zip</url>
+      <sha>a783a56ee79d1d97ea09068e8b14d4b8d768934f</sha>
     </plugin>
   </plugins>
 </extensions>
