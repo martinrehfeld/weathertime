@@ -232,7 +232,7 @@ sub _twcFormattedHash {
 						's' => $index == 0 ? $currentHash->{wind_mph} : "N/A",
 						't' => $index == 0 ? $windDir : "N/A"
 					},
-					'ppcp' => $_->{pop}
+					'ppcp' => ref($_->{pop}) eq "HASH" ? "N/A" : $_->{pop}
 				}]
 		});
 		$index++;
