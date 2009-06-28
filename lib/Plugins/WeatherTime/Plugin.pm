@@ -86,6 +86,7 @@
 #	                  updates for FR and NL
 #	2009/01/17 v2.2   Officially support Versions 7.2/7.3 of SqueezeCenter
 #	           v2.2.1  + last minute fixes for Extension Installer
+#	2009/06/28 v2.2.2 fix for display when precipitation data is missing
 #
 #	----------------------------------------------------------------------
 #	To do:
