@@ -82,6 +82,7 @@
 #	                  provided by Wunderground and merged translation
 #	                  updates for FR and NL
 #	2009/01/17 v1.9.7 add missing translations
+#	2009/06/28 v1.9.8 fix for display when precipitation data is missing
 #
 #
 #	----------------------------------------------------------------------
