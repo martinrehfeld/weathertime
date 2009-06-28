@@ -233,7 +233,7 @@ sub _twcFormattedHash {
 						't' => $index == 0 ? $windDir : "N/A",
 						'gust' => $index == 0 && !ref($currentHash->{wind_gust_mph}) eq "HASH" ? $currentHash->{wind_gust_mph} : "N/A"
 					},
-					'ppcp' => $_->{pop}
+					'ppcp' => ref($_->{pop}) eq "HASH" ? "N/A" : $_->{pop}
 				}],
 				'sunr' => $index == 0 ? $forecastHash->{moon_phase}->{sunrise}->{hour}.":".$forecastHash->{moon_phase}->{sunrise}->{minute} : "N/A",
 				'suns' => $index == 0 ? $forecastHash->{moon_phase}->{sunset}->{hour}.":".$forecastHash->{moon_phase}->{sunset}->{minute} : "N/A"
