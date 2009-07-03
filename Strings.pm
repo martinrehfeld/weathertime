@@ -702,6 +702,14 @@ PLUGIN_WEATHERTIME_T-STORMS
 	SE	Åska
 	DA	Torden
 
+PLUGIN_WEATHERTIME_THUNDERSTORM
+	EN	Thunderstorms
+	FR	Orages
+	DE	Gewitter
+	NL	Onweersbuien
+	SE	Stormar med åska
+	DA	Torden og Storm
+
 PLUGIN_WEATHERTIME_THUNDERSTORMS
 	EN	Thunderstorms
 	FR	Orages
